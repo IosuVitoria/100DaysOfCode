@@ -1,0 +1,72 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/run1.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+.background {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 30px;
+}
+  
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+
+.instructions {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+}
+  
+  
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+  
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+  
+input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+  
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+  
+button:hover {
+    background-color: #06203c;
+}
+  

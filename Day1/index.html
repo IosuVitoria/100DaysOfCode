@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 1 - Day 1</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <h1>EMAIL VALIDATION - FORMULARIO CON VALIDACIONES</h1>
+        </header>
+
+        <section class="instructions">
+            <h3>Instrucciones - Instructions</h3>
+            <p>For the first day, the task is to create a form with validations. The user will provide us with information, and before sending it to the server, we will verify it. If it's incorrect, a message will be displayed to the user.</p>
+            <p>Para el primer día se tiene que hacer un formulario en el cual se pida al usuario sus datos personales y un correo y se valide según se envía para comprobar en base de datos.</p>
+        </section>
+
+        <form action="submit" class="form-container">
+            <header>
+                <h4>Registro de usuarios</h4>
+                <p>Introduzca los datos correctamente para que podamos atender a sus peticiones.</p>
+            </header>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" required>
+            <label for="age">Edad</label>
+            <input type="number" name="age" id="age" required>
+            <label for="telephone">Teléfono</label>
+            <input type="number" name="telephone" id="telephone" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
