@@ -1,5 +1,6 @@
 const form = document.getElementById('fibonacci-form');
 const sequenceOutput = document.getElementById('sequence-output');
+const resetButton = document.getElementById('reset-button');
 
 function generateFibonacciSequence(n) {
   const sequence = [0, 1];
@@ -30,3 +31,9 @@ form.addEventListener('submit', (event) => {
 
   sequenceOutput.innerHTML = output;
 });
+
+resetButton.addEventListener('click', () => {
+    sequenceOutput.innerHTML='';
+    // resetButton.style.display = none;
+    form.reset(); 
+})
