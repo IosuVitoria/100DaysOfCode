@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secuencia Fibonacci</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>DAY 2 OF 100 - DÍA 2 DE 100</h1>
+        <h3>Propuesta: Realizar un código que permita calcular de manera definida el número de números deseados de la secuencia Fibonacci.</h3>
+        <h3>Objective: Write code that calculates a defined number of desired Fibonacci sequence numbers.</h3>
+    </header>
+    
+    <main>
+    <section class="fibonacci-container">
+        <h1>Secuencia Fibonacci</h1>
+        <p>La secuencia de Fibonacci es una serie de números en la que cada número es la suma de los dos anteriores. Comienza con el 0 y con el 1.</p>
+        <p>Para calcular la secuencia, comenzamos con los dos primeros números (0 y 1), luego cada número subsiguiente es la suma de los dos anteriores.</p>
+        <br>
+        <h2>Cómo funciona el código JavaScript:</h2>
+        <p>El siguiente código JavaScript se ha preparado para generar y muestra los primeros <strong>n</strong> números en la secuencia de Fibonacci. Puedes leer las explicaciones intercaladas para entender su planteamiento:</p>
+         <pre><code>
+            // Obtener referencia a los elementos del DOM. Se captura por una parte el formulario que 
+            // es dónde se encuentra ubicado el evento submit y por otra parte el elemento dónde se 
+            // mostrará el resultado de la petición.
+            const form = document.getElementById('fibonacci-form');
+            const sequenceOutput = document.getElementById('sequence-output');
+        
+            // Función para generar la secuencia de Fibonacci. Se arranca con la secuencia inicial conocida de [0,1]
+            function generateFibonacciSequence(n) {
+                const sequence = [0, 1];
+                for (let i = 2; i < n; i++) {
+                sequence[i] = sequence[i - 1] + sequence[i - 2];
+            }
+            return sequence;
+            }
+        
+            // Escuchar el evento submit en el formulario. Como está capturado se puede escuchar el evento submit y
+            // arrancar el funcionamiento del mismo.
+            form.addEventListener('submit', (event) => {
+            event.preventDefault(); //Evitar el funcionamiento por defecto del formulario. 
+        
+            const numberInput = document.getElementById('number-input'); // Se captura el número.
+            const n = parseInt(numberInput.value);
+        
+            if (isNaN(n) || n <= 0) {
+                alert('Por favor, ingresa un número positivo válido.'); //Capturar un posible error antes de 
+                //que se produzca.
+                return;
+            }
+        
+            const fibonacciSequence = generateFibonacciSequence(n); // Se llama a la primera función que se ha generado para 
+           // poder crear la secuencia.
+        
+            let output = 'Secuencia Fibonacci:'; //Mostrar la secuencia en forma de lista.
+                fibonacciSequence.forEach(num => {
+                output += `${num}`;
+            });
+            output += '</ul>';
+        
+            sequenceOutput.innerHTML = output;
+            });
+    </code></pre>
+
+        <p>Ingresa la cantidad de números de la secuencia Fibonacci que deseas generar:</p>
+        <form id="fibonacci-form">
+            <label for="number-input">Número de elementos:</label>
+            <input type="number" id="number-input" min="1" step="1" required>
+            <button type="submit">Generar Secuencia</button>
+        </form>
+
+    <div id="sequence-output"></div>
+    </section>
+    </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
