@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Aitana Bonmati</title>
+</head>
+<body>
+    <main>
+        <h1>AITANA BONMATÍ</h1>
+        <img src="./assets/aitana.jpg" alt="Aitana Bonmatí">
+    
+        <ul class="tabs">
+            <li><button class="tab-button" data-tab="personal_data">Datos personales</button></li>
+            <li><button class="tab-button" data-tab="career_data">Carrera deportiva</button></li>
+            <li><button class="tab-button" data-tab="national_player">Selección nacional</button></li>
+        </ul>
+
+        <section id="personal_data" class="tab">
+            <p><strong>Nombre completo:</strong> <span id="nombreCompleto"></span></p>
+            <p><strong>Nacimiento:</strong> <span id="nacimiento"></span></p>
+            <p><strong>Lugar de nacimiento:</strong> <span id="lugarNacimiento"></span></p>
+            <p><strong>Nacionalidad:</strong> <span id="nacionalidad"></span></p>
+            <p><strong>Altura:</strong> <span id="altura"></span></p>
+        </section>
+    
+        <section id="career_data"  class="tab">
+            <p><strong>Club actual:</strong> <span id="clubActual"></span></p>
+            <p><strong>Liga:</strong> <span id="liga"></span></p>
+            <p><strong>Posición:</strong> <span id="posicion"></span></p>
+            <p><strong>Dorsal:</strong> <span id="dorsal"></span></p>
+            <p><strong>Goles en clubes:</strong> <span id="golesEnClubes"></span></p>
+        </section>
+
+        <section id="national_player"  class="tab">
+            <p><strong>Selección nacional:</strong> <span id="seleccionNacional"></span></p>
+            <p><strong>Debut:</strong> <span id="debut"></span></p>
+            <p><strong>Dorsal en selección:</strong> <span id="dorsalSeleccion"></span></p>
+            <p><strong>Partidos y goles:</strong> <span id="partidosGoles"></span></p>
+            <p><strong>Palmarés:</strong> <span id="palmares"></span></p>
+        </section>
+    </main>
+
+</body>
+</html>

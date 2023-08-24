@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 50%, hsla(247, 73%, 69%, 1) 100%);
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: none;
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-primary {
+    border-color: #8b07ffc8;
+    background-image: linear-gradient(to bottom, #4023ff, #fe6ad6);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    border-color: #0add3f;
+    background-image: linear-gradient(to bottom, #007bff, #ffca2c);
+}
+
+#copyButton{
+    border-color: #8b07ffc8;
+    background-image: linear-gradient(to bottom, #4023ff, #fe6ad6);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#copyButton:hover {
+    border-color: #0add3f;
+    background-image: linear-gradient(to bottom, #007bff, #ffca2c);
+}
+
+
+
+
+.badge-success {
+    background-color: #28a745;
+    font-size: 18px;
+}
+
+.language-selector {
+    text-align: center;
+    padding: 10px;
+    display: inherit;
+    margin: 0 auto;
+}
+
+.flag-icon {
+    cursor: pointer;
+    margin: 0 10px;
+    width: 90px;
+    height: 73px;
+}
+
+.flag-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
