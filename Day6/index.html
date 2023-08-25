@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simulación de Población</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <h1>Simulación de Población</h1>
+  <form id="population-form">
+    <label for="initial-size">Cantidad de individuos iniciales:</label>
+    <input type="number" id="initial-size" required><br>
+    <label for="target-population">Población final objetivo:</label>
+    <input type="number" id="target-population" required><br>
+    <button type="submit">Simular</button>
+  </form>
+  <div>
+    <h2>Generaciones</h2>
+    <canvas id="population-chart"></canvas>
+    <table id="population-table">
+      <thead>
+        <tr>
+          <th>Generación</th>
+          <th>Población</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script>
+    const form = document.getElementById("population-form");
+    const initialSizeInput = document.getElementById("initial-size");
+    const targetPopulationInput = document.getElementById("target-population");
+    const chartCanvas = document.getElementById("population-chart");
+    const populationTable = document.getElementById("population-table").getElementsByTagName('tbody')[0];
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const initialPopulationSize = parseInt(initialSizeInput.value);
+      const targetPopulation = parseInt(targetPopulationInput.value);
+      const population = new Population(initialPopulationSize);
+      const generationsData = [];
+
+      while (population.individuals.length < targetPopulation) {
+        const newIndividuals = [];
+        for (const individual of population.individuals) {
+          if (!individual.willDie) {
+            const newBorn = individual.reproduce();
+            if (newBorn) {
+              newIndividuals.push(newBorn);
+            }
+            individual.age++;
+          }
+        }
+        population.individuals.push(...newIndividuals);
+        generationsData.push(population.individuals.length);
+      }
+
+      updateChart(generationsData);
+      updateTable(generationsData);
+    });
+
+    function updateChart(data) {
+      const labels = Array.from({ length: data.length }, (_, i) => `Generación ${i + 1}`);
+      const chartData = {
+        labels: labels,
+        datasets: [{
+          label: "Población por Generación",
+          data: data,
+          borderColor: "rgba(75, 192, 192, 1)",
+          backgroundColor: "rgba(75, 192, 192, 0.2)",
+          borderWidth: 1
+        }]
+      };
+      const chartConfig = {
+        type: "line",
+        data: chartData
+      };
+      new Chart(chartCanvas, chartConfig);
+    }
+
+    function updateTable(data) {
+      populationTable.innerHTML = "";
+      data.forEach((population, index) => {
+        const row = populationTable.insertRow();
+        const generationCell = row.insertCell(0);
+        const populationCell = row.insertCell(1);
+        generationCell.innerHTML = `Generación ${index + 1}`;
+        populationCell.innerHTML = population;
+      });
+    }
+
+  </script>
+</body>
+</html>
