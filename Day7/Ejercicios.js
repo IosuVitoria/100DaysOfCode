@@ -161,18 +161,20 @@
 
 //Ejercicio 5: Buscador de palabras: Crea una función que busque una palabra específica en un array de palabras y devuelva su posición.
 
-function searcher(word, array){
-    let position = 0;
-    let wordTransformed = word.toLowerCase();
-    for(let i = 0; i < array.length; i++){
-        if(wordTransformed === array[i]){
-            position = i;
-        }
-    }
-    console.log(`La posición de la palabra en el array es: ${position}`);
-}
+// function searcher(word, array){
+//     let position = 0;
+//     let wordTransformed = word.toLowerCase();
+//     for(let i = 0; i < array.length; i++){
+//         if(wordTransformed === array[i]){
+//             position = i;
+//         }
+//     }
+//     console.log(`La posición de la palabra en el array es: ${position}`);
+// }
 
-console.log("Ejercicio 5");
-searcher("pera", ["pera", "limón", "melón", "manzana", "albaricoque"]);
-searcher("pEra", ["pera", "limón", "melón", "manzana", "albaricoque"]);
-searcher("manzana", ["pera", "limón", "melón", "manzana", "albaricoque"]);
+// console.log("Ejercicio 5");
+// searcher("pera", ["pera", "limón", "melón", "manzana", "albaricoque"]);
+// searcher("pEra", ["pera", "limón", "melón", "manzana", "albaricoque"]);
+// searcher("manzana", ["pera", "limón", "melón", "manzana", "albaricoque"]);
+
+//NIVEL 
