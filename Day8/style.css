@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('./assets/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+    background: linear-gradient(to bottom, rgba(59, 52, 52, 0.95), rgba(255, 255, 255, 0.85));
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+  
+header {
+    margin-bottom: 20px;
+}
+  
+.question {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+  
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.option {
+    margin: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    width: 50%;
+    background-color: #fff5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.option:hover {
+    background-color: #d9d6d6;
+    transform: scale(1.2);
+}
+  
+.next-button {
+    background-color: linear-gradient(to top, rgba(14, 7, 7, 0.95), rgba(82, 77, 77, 0.85));
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.next-button:hover {
+    background-color: #313234;
+    color:white
+}
+  
