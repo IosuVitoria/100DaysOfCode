@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votación</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#candidatos">Candidatos</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+        </ul>
+    </nav>
+    <section id="inicio">
+        <div class="intro">
+            <header>
+                <h1>Sistema de Votación para el Nuevo Líder de los Vengadores</h1>
+            </header>
+            <p>¡Bienvenidos a las elecciones para el próximo líder de los Vengadores! En un esfuerzo por mantener la justicia y la seguridad en el mundo, los Vengadores están buscando un nuevo líder para dirigir al equipo en sus misiones.</p>
+            <p>Los siguientes superhéroes han sido nominados como candidatos para el puesto de líder. Conozcamos más sobre cada uno de ellos antes de emitir tu voto:</p>
+        </div>
+        <div class="candidate-gallery">
+            <div class="candidate">
+                <img src="./assets/spiderman.jpg" alt="Spiderman">
+                <div class="candidate-info">
+                    <h3>Spiderman - Peter Parker</h3>
+                    <h4>Poderes: fuerza aumentada, agilidad, sentidos arácnidos, lanzar telarañas</h4>
+                    <p>Peter Parker, también conocido como Spiderman, es un joven superhéroe con habilidades arácnidas. Después de ser mordido por una araña radiactiva, Peter adquirió fuerza sobrehumana, agilidad y la capacidad de trepar paredes. Utiliza su ingenio para crear dispositivos y lanzar telarañas, lo que le permite balancearse entre edificios y atrapar a los villanos.</p>
+                    <p>Descripción: Spiderman es conocido por su sentido de la responsabilidad y su actitud amigable. Su agilidad y rapidez lo convierten en un luchador formidable, capaz de enfrentar desafíos incluso en los lugares más complicados.</p>
+                    <p>Lugar de residencia: Ciudad de Nueva York</p>
+                    <p>Equipos: Vengadores, Los 4 Fantásticos</p>
+                </div>
+            </div>
+            <div class="candidate">
+                <img src="./assets/hulk.jpg" alt="Hulk">
+                <div class="candidate-info">
+                    <h3>Hulk - Dr. Robert Bruce Banner</h3>
+                    <h4>Poderes: fuerza descomunal (cuanto más se enfanda más fuerte se vuelve), resistencia, regeneración</h4>
+                    <p>El Dr. Bruce Banner se transforma en Hulk, un gigante verde con una fuerza increíble, cuando se enoja. Hulk es virtualmente indestructible y puede regenerarse rápidamente de lesiones. Aunque a menudo lucha por controlar su ira, Banner usa su intelecto para ayudar a los Vengadores en sus misiones.</p>
+                    <p>Descripción: La altura y peso del Hulk es variable y depende del nivel de ira. El color de su piel y su pelo es verde es su marca icónica y hacen referencia a la radiación gamma que le dió origen. La expresión facial de Hulk suele ser de enfado debido a la situación que lo hace aflorar. Habla con monosílabos generalmente pues lo que realmente prefiere es la lucha y la pelea. </p>
+                    <p>Lugar de residencia: Vagabundo, pero generalmente en lugares remotos</p>
+                    <p>Equipos: Vengadores</p>
+                </div>
+            </div>
+            <div class="candidate">
+                <img src="./assets/thor.jpg" alt="Thor">
+                <div class="candidate-info">
+                    <h3>Thor - Thor Odinson</h3>
+                    <h4>Poderes: fuerza sobrehumana, longevidad, resistencia sobrehumana, control sobre el clima</h4>
+                    <p>Thor, el Dios del Trueno, posee un martillo mágico llamado Mjolnir que le otorga la capacidad de controlar el clima y manipular los elementos. Thor es fuerte, resistente y puede volar. Como príncipe de Asgard, lucha por la justicia tanto en la Tierra como en los reinos celestiales.</p>
+                    <p>Descripción: Thor es un inviduo que supera el metro noventa de altura. Pesa más de 200kg al ser tres veces más denso que los humanos debido a su naturaleza asgardiana. Tiene el pelo rubio largo y suele llevar barba. Suele llevar su trabaje característico de asgardiano con una capa aunque también se le puede ver vestido como un humano cuando visita la tierra para evitar ser reconocido.</p>
+                    <p>Lugar de residencia: Asgard y la Tierra</p>
+                    <p>Equipos: Vengadores</p>
+                </div>
+            </div>
+            <div class="candidate">
+                <img src="./assets/ironman.jpg" alt="Ironman">
+                <div class="candidate-info">
+                    <h3>Ironman - Tony Stark</h3>
+                    <h4>Poderes: armadura tecnológica, genio inventor. Con el tiempo ha tenido el virus Extremis en su sistema lo que le ha permitido adquirir cierta tecnopatía. Esto le ha permitido controlar a voluntad ciertas máquinas.</h4>
+                    <p>Tony Stark, el genio inventor, se enfunda en una armadura de alta tecnología como Ironman. La armadura le brinda vuelo, fuerza sobrehumana y una amplia gama de armas y herramientas. Stark utiliza su inteligencia y recursos para combatir el crimen y proteger el mundo como Ironman.</p>
+                    <p>Descripción: Ironman es de aspecto un hombre normal. Roza el metro ochenta de altura y está en buena forma. Es moreno y lleva una perilla que como el color verde de Hulk es su marca característica. Debido a su labor como CEO de industrias Stark lo más normal es verlo vestido de traje cuando no lleva su armadura de Ironman.</p>
+                    <p>Lugar de residencia: Malibú, California</p>
+                    <p>Equipos: Vengadores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="candidatos">
+        <div class="voting-container">
+            <div class="candidates">
+                <h2>Vota por tu candidato</h2>
+                <ul id="candidateList">
+                    <li><button class="candidate-button" onclick="votar(0)">Spiderman</button></li>
+                    <li><button class="candidate-button" onclick="votar(1)">Hulk</button></li>
+                    <li><button class="candidate-button" onclick="votar(2)">Thor</button></li>
+                    <li><button class="candidate-button" onclick="votar(3)">Ironman</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="resultados">
+        <div class="voting-container">
+            <div class="results">
+                <h2>Resultados</h2>
+                <div class="chart-container">
+                    <canvas id="pieChart"></canvas>
+                </div>
+                <ul id="resultList" class="result-list">
+                    <li><span id="votesA">0</span> votos - Spiderman (<span id="percentageA">0%</span>)</li>
+                    <li><span id="votesB">0</span> votos - Hulk (<span id="percentageB">0%</span>)</li>
+                    <li><span id="votesC">0</span> votos - Thor (<span id="percentageC">0%</span>)</li>
+                    <li><span id="votesD">0</span> votos - Ironman (<span id="percentageD">0%</span>)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <footer>
+            <p>&copy; 2023 Sistema de Votación</p>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
