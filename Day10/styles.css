@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #222, #444);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.input-container{
+    margin-top:20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 76%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.add-button {
+    background: linear-gradient(to bottom, #daa520, #96820d);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.add-button:hover {
+    background: linear-gradient(to bottom, #b8860b, #ffcc00);
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #e6b874, #ffd700);
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-buttons button {
+    background: linear-gradient(to bottom, #daa520, #ffd700);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task-buttons button:hover {
+    background: linear-gradient(to bottom, #b8860b, #ffcc00);
+}
+
+.buttons{
+    margin-top: 5px;
+}
+
+.completeButton{
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #b8860b, #ffcc00);
+}
+
+.completeButton:hover{
+    background: linear-gradient(to bottom, #f0b00e, #fde99a);
+}
+
+.editButton{
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #b8860b, #ffcc00);
+}
+
+.editButton:hover{
+    background: linear-gradient(to bottom, #f0b00e, #fde99a);
+}
+
+.eraseButton{
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #b8860b, #ffcc00);
+}
+
+.eraseButton:hover{
+    background: linear-gradient(to bottom, #f0b00e, #fde99a);
+}
