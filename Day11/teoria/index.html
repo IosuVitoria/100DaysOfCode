@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Info</title>
+</head>
+<body>
+  <h1>Pokémon Information</h1>
+  <div>
+    <h2>Name:</h2>
+    <p id="pokemonName"></p>
+    <h2>Height:</h2>
+    <p id="pokemonHeight"></p>
+    <h2>Weight:</h2>
+    <p id="pokemonWeight"></p>
+    <h2>Abilities:</h2>
+    <ul id="pokemonAbilities"></ul>
+  </div>
+
+  <script>
+    const apiUrl = 'https://pokeapi.co/api/v2/pokemon';
+    const pokemonId = 25;
+
+    const pokemonNameElement = document.getElementById('pokemonName');
+    const pokemonHeightElement = document.getElementById('pokemonHeight');
+    const pokemonWeightElement = document.getElementById('pokemonWeight');
+    const pokemonAbilitiesElement = document.getElementById('pokemonAbilities');
+
+    fetch(`${apiUrl}/${pokemonId}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Error in request. Status code: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(pokemonData => {
+        pokemonNameElement.textContent = pokemonData.name;
+        pokemonHeightElement.textContent = `${pokemonData.height} decimetres`;
+        pokemonWeightElement.textContent = `${pokemonData.weight} hectograms`;
+
+        const abilitiesList = pokemonData.abilities.map(ability => {
+          return `<li>${ability.ability.name}</li>`;
+        }).join('');
+        pokemonAbilitiesElement.innerHTML = abilitiesList;
+      })
+      .catch(error => {
+        console.error('Request error:', error);
+      });
+  </script>
+</body>
+</html>
