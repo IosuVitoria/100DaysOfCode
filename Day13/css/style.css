@@ -21,7 +21,10 @@ body {
   overflow: hidden;
   font-family: "Lora", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   transition: all 0.1s;
-  background-color: var(--dark);
+  background-image: url('../assets/fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .images {
@@ -56,6 +59,7 @@ body {
   border-radius: 30px;
   background-size: cover;
   filter: grayscale(0%) blur(0); 
+  box-shadow: 0 10px 20px rgba(165, 3, 3, 0.8);
 }
 
 .image.active .label {
