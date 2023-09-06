@@ -1,6 +1,9 @@
 const images = document.querySelectorAll('.image');
+const button = document.getElementById('changeImagesButton');
+const photoOne = document.getElementById('first__photo')
 
-for (let [i, imageSelected] of images.entries()) { // Utiliza 'images' en lugar de 'image'
+
+for (let [i, imageSelected] of images.entries()) { 
     imageSelected.addEventListener("click", function focus() {
         resetFocus();
         imageSelected.classList.toggle('active');
@@ -10,3 +13,4 @@ for (let [i, imageSelected] of images.entries()) { // Utiliza 'images' en lugar 
 function resetFocus() {
     images.forEach(i => i.classList.remove('active'))
 }
+
