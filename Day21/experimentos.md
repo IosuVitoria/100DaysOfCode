@@ -1,0 +1,1 @@
+    background: linear-gradient(to right, #ff80ff, #7cabf3); color sacado durante los ensayos con el html en el navegador

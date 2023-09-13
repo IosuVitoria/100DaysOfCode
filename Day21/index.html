@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de VO2 Máx</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Calculadora de VO2 Máx</h1>
+    <div class="container">
+        <section id="cooper">
+            <h2>Test de Cooper</h2>
+            <p>
+                El Test de Cooper evalúa la resistencia aeróbica. El atleta corre la mayor distancia posible en 12 minutos a una velocidad constante. Ingresa la distancia recorrida en metros para calcular el VO2 máx estimado.
+            </p>
+            <p>Paso a paso:
+                <ol>
+                    <li>Encuentra un lugar plano y marca una pista de 400 metros.</li>
+                    <li>Calienta adecuadamente.</li>
+                    <li>Corre la mayor distancia posible en 12 minutos a un ritmo constante.</li>
+                    <li>Ingresa la distancia recorrida en la calculadora y haz clic en "Calcular".</li>
+                </ol>
+            </p>
+            <table>
+                <caption>Resultados Estimados del Test de Cooper para Hombres</caption>
+                <tr>
+                    <th>Edad</th>
+                    <th>Excelente</th>
+                    <th>Muy Bueno</th>
+                    <th>Bueno</th>
+                    <th>Regular</th>
+                </tr>
+                <tr>
+                    <td>18-25</td>
+                    <td>> 2700 m</td>
+                    <td>2400-2699 m</td>
+                    <td>2200-2399 m</td>
+                    <td>< 2200 m</td>
+                </tr>
+                <tr>
+                    <td>26-35</td>
+                    <td>> 2600 m</td>
+                    <td>2300-2599 m</td>
+                    <td>2100-2299 m</td>
+                    <td>< 2100 m</td>
+                </tr>
+                <tr>
+                    <td>36-45</td>
+                    <td>> 2500 m</td>
+                    <td>2200-2499 m</td>
+                    <td>2000-2199 m</td>
+                    <td>< 2000 m</td>
+                </tr>
+                <tr>
+                    <td>46-55</td>
+                    <td>> 2400 m</td>
+                    <td>2100-2399 m</td>
+                    <td>1900-2099 m</td>
+                    <td>< 1900 m</td>
+                </tr>
+                <tr>
+                    <td>56-65</td>
+                    <td>> 2300 m</td>
+                    <td>2000-2299 m</td>
+                    <td>1800-1999 m</td>
+                    <td>< 1800 m</td>
+                </tr>
+            </table>
+            <table>
+                <caption>Resultados Estimados del Test de Cooper para Mujeres</caption>
+                <tr>
+                    <th>Edad</th>
+                    <th>Excelente</th>
+                    <th>Muy Bueno</th>
+                    <th>Bueno</th>
+                    <th>Regular</th>
+                </tr>
+                <tr>
+                    <td>18-25</td>
+                    <td>> 2000 m</td>
+                    <td>1800-1999 m</td>
+                    <td>1600-1799 m</td>
+                    <td>< 1600 m</td>
+                </tr>
+                <tr>
+                    <td>26-35</td>
+                    <td>> 1900 m</td>
+                    <td>1700-1899 m</td>
+                    <td>1500-1699 m</td>
+                    <td>< 1500 m</td>
+                </tr>
+                <tr>
+                    <td>36-45</td>
+                    <td>> 1800 m</td>
+                    <td>1600-1799 m</td>
+                    <td>1400-1599 m</td>
+                    <td>< 1400 m</td>
+                </tr>
+                <tr>
+                    <td>46-55</td>
+                    <td>> 1700 m</td>
+                    <td>1500-1699 m</td>
+                    <td>1300-1499 m</td>
+                    <td>< 1300 m</td>
+                </tr>
+                <tr>
+                    <td>56-65</td>
+                    <td>> 1600 m</td>
+                    <td>1400-1599 m</td>
+                    <td>1200-1399 m</td>
+                    <td>< 1200 m</td>
+                </tr>
+            </table>
+            <form class = "formCooper">
+                <label for="cooperDistance">Distancia recorrida (metros):</label>
+                <input type="number" id="cooperDistance" placeholder="Ejemplo: 2500">
+                <button id="calculateCooper">Calcular</button>
+            </form>
+            <div id="cooperResult"></div>
+        </section>
+
+        <section id="navette">
+            <h2>Test de Navette</h2>
+            <p>
+                El Test de Navette evalúa la resistencia aeróbica y la capacidad de cambio de dirección. El atleta corre ida y vuelta entre dos puntos a una velocidad que aumenta gradualmente. Ingresa la distancia recorrida en metros para calcular el VO2 máx estimado.
+            </p>
+            <p>Paso a paso:
+                <ol>
+                    <li>Marca dos puntos a una distancia de 20 metros uno del otro.</li>
+                    <li>Calienta adecuadamente.</li>
+                    <li>Corre ida y vuelta entre los dos puntos a un ritmo constante mientras suena una señal.</li>
+                    <li>La velocidad aumentará gradualmente. Continúa hasta que no puedas mantener el ritmo.</li>
+                    <li>Ingresa la distancia recorrida en la calculadora y haz clic en "Calcular".</li>
+                </ol>
+            </p>
+            <h3>Resultados Oficiales del Test de Navette (Hombres)</h3>
+            <table>
+                <caption>Hombres</caption>
+                <tr>
+                    <th>Edad</th>
+                    <th>Excelente</th>
+                    <th>Muy Bueno</th>
+                    <th>Bueno</th>
+                    <th>Regular</th>
+                </tr>
+                <tr>
+                    <td>18-25</td>
+                    <td>> 3400 m</td>
+                    <td>3200-3399 m</td>
+                    <td>3000-3199 m</td>
+                    <td>< 3000 m</td>
+                </tr>
+                <tr>
+                    <td>26-35</td>
+                    <td>> 3200 m</td>
+                    <td>3000-3199 m</td>
+                    <td>2800-2999 m</td>
+                    <td>< 2800 m</td>
+                </tr>
+                <tr>
+                    <td>36-45</td>
+                    <td>> 3000 m</td>
+                    <td>2800-2999 m</td>
+                    <td>2600-2799 m</td>
+                    <td>< 2600 m</td>
+                </tr>
+                <tr>
+                    <td>46-55</td>
+                    <td>> 2800 m</td>
+                    <td>2600-2799 m</td>
+                    <td>2400-2599 m</td>
+                    <td>< 2400 m</td>
+                </tr>
+                <tr>
+                    <td>56-65</td>
+                    <td>> 2600 m</td>
+                    <td>2400-2599 m</td>
+                    <td>2200-2399 m</td>
+                    <td>< 2200 m</td>
+                </tr>
+                <tr>
+                    <td>65+</td>
+                    <td>> 2400 m</td>
+                    <td>2200-2399 m</td>
+                    <td>2000-2199 m</td>
+                    <td>< 2000 m</td>
+                </tr>
+            </table>
+            
+            <h3>Resultados Oficiales del Test de Navette (Mujeres)</h3>
+            <table>
+                <caption>Mujeres</caption>
+                <tr>
+                    <th>Edad</th>
+                    <th>Excelente</th>
+                    <th>Muy Bueno</th>
+                    <th>Bueno</th>
+                    <th>Regular</th>
+                </tr>
+                <tr>
+                    <td>18-25</td>
+                    <td>> 2800 m</td>
+                    <td>2600-2799 m</td>
+                    <td>2400-2599 m</td>
+                    <td>< 2400 m</td>
+                </tr>
+                <tr>
+                    <td>26-35</td>
+                    <td>> 2600 m</td>
+                    <td>2400-2599 m</td>
+                    <td>2200-2399 m</td>
+                    <td>< 2200 m</td>
+                </tr>
+                <tr>
+                    <td>36-45</td>
+                    <td>> 2600 m</td>
+                    <td>2400-2599 m</td>
+                    <td>2200-2399 m</td>
+                    <td>< 2200 m</td>
+                </tr>
+                <tr>
+                    <td>46-55</td>
+                    <td>> 2400 m</td>
+                    <td>2200-2399 m</td>
+                    <td>2000-2199 m</td>
+                    <td>< 2000 m</td>
+                </tr>
+                <tr>
+                    <td>56-65</td>
+                    <td>> 2200 m</td>
+                    <td>2000-2199 m</td>
+                    <td>1800-1999 m</td>
+                    <td>< 1800 m</td>
+                </tr>
+                <tr>
+                    <td>65+</td>
+                    <td>> 2000 m</td>
+                    <td>1800-1999 m</td>
+                    <td>1600-1799 m</td>
+                    <td>< 1600 m</td>
+                </tr>
+                
+            </table>
+            
+            <form>
+                <label for="navetteDistance">Distancia recorrida (metros):</label>
+                <input type="number" id="navetteDistance" placeholder="Ejemplo: 1000">
+                
+                <label for="navetteMaxSpeed">Velocidad máxima (km/h):</label>
+                <input type="number" id="navetteMaxSpeed" placeholder="Ejemplo: 12">
+                
+                <button id="calculateNavette">Calcular</button>
+            </form>
+            <div id="navetteResult"></div>
+            <button id="openPopup" onclick="openPopupWindow()">Valores orientativos</button>
+        </section>
+        
+        <!-- <section id="leger">
+            <h2>Test de Leger-Boucher</h2>
+            <p>
+                El Test de Leger-Boucher evalúa la resistencia aeróbica. El atleta corre una distancia específica a una velocidad constante. Ingresa la distancia recorrida en metros para calcular el VO2 máx estimado.
+            </p>
+            <table>
+                <caption>Resultados Oficiales del Test de Leger-Boucher</caption>
+                <tr>
+                    <th>Edad</th>
+                    <th>Excelente</th>
+                    <th>Muy Bueno</th>
+                    <th>Bueno</th>
+                    <th>Regular</th>
+                </tr>
+                <tr>
+                    <td>18-25</td>
+                    <td>> 2800 m</td>
+                    <td>2700-2799 m</td>
+                    <td>2600-2699 m</td>
+                    <td>< 2600 m</td>
+                </tr>
+                <tr>
+                    <td>26-35</td>
+                    <td>> 2700 m</td>
+                    <td>2600-2699 m</td>
+                    <td>2500-2599 m</td>
+                    <td>< 2500 m</td>
+                </tr>
+                 Agrega más filas para otras edades si es necesario -->
+            <!-- </table>
+            <form>
+                <label for="legerDistance">Distancia recorrida (metros):</label>
+                <input type="number" id="legerDistance" placeholder="Ejemplo: 3000">
+                <button id="calculateLeger">Calcular</button>
+            </form>
+            <div id="legerResult"></div>
+            <p>Paso a paso:
+                <ol>
+                    <li>Encuentra un lugar plano y marca una pista de 20 metros.</li>
+                    <li>Calienta adecuadamente.</li>
+                    <li>Corre la distancia específica a un ritmo constante.</li>
+                    <li>Ingresa la distancia recorrida en la calculadora y haz clic en "Calcular".</li>
+                </ol>
+            </p>
+        </section>
+    </div> --> 
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2023 Iosu Gómez Valdecantos</p>
+                <p>Celebrando el Día del Programador</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.linkedin.com/in/iosu-gomez-biologo-analista/" target="_blank">
+                    Iosu Gómez <img src="./assets/linkedin.png" alt="LinkedIn" class="footer-logo">
+                </a>
+                <a href="https://github.com/IosuVitoria" target="_blank">
+                    IosuVitoria <img src="./assets/github.png" alt="GitHub" class="footer-logo">
+                </a>
+                <p>Email: iosugvaldecantos@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
