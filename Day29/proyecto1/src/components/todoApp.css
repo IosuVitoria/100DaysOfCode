@@ -1,0 +1,155 @@
+body {
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.todoContainer {
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.todoCreateForm {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.todoInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttonCreate {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonCreate:hover {
+    background-color: #0056b3;
+}
+
+.todosContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.todo {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 4px rgba(0, 0 , 0, 0.1);
+}
+
+
+.todoUpdateForm {
+    display: flex;
+    align-items: center;
+}
+
+.todoInput {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.button {
+    padding: 10px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    transform: 0.3s;
+}
+
+.button:hover {
+    background-color: #013c7b;
+    border-radius: 15px;
+    transform: translateY(-1px)
+}
+
+.edition{
+    margin-right: 5px;
+}
+
+.delete{
+    background-color: red;
+}
+
+.delete:hover{
+    background-color: #600000;
+    border-radius: 15px;
+    transform: translateY(-1px)
+}
+
+.item__todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.todoTitle {
+    flex: 1;
+    padding: 5px;
+}
+
+.todoTitle:hover {
+    background-color: #f0f0f0;
+}
+
+.explanation {
+    font-family: Arial, sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #f9f9f9b5; 
+    color: #333; 
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+
+h1, h2 {
+    margin-bottom: 10px;
+    color: #002852; 
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
