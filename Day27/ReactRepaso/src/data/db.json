@@ -1,0 +1,145 @@
+{
+    "pacientes": [
+      {
+        "nombre": "Juan Pérez",
+        "edad": 35,
+        "causa_de_visita": "Dolor de cabeza",
+        "medicamento_recetado": "Paracetamol",
+        "observaciones": "Descansar y mantenerse hidratado"
+      },
+      {
+        "nombre": "María García",
+        "edad": 42,
+        "causa_de_visita": "Problemas de sueño",
+        "medicamento_recetado": "Melatonina",
+        "observaciones": "Evitar la cafeína por la noche"
+      },
+      {
+        "nombre": "Luis Rodríguez",
+        "edad": 50,
+        "causa_de_visita": "Presión arterial alta",
+        "medicamento_recetado": "Enalapril",
+        "observaciones": "Controlar la presión regularmente"
+      },
+      {
+        "nombre": "Ana Martínez",
+        "edad": 28,
+        "causa_de_visita": "Gripe",
+        "medicamento_recetado": "Ibuprofeno",
+        "observaciones": "Tomar líquidos calientes y descansar"
+      },
+      {
+        "nombre": "Pedro López",
+        "edad": 64,
+        "causa_de_visita": "Diabetes",
+        "medicamento_recetado": "Metformina",
+        "observaciones": "Seguir una dieta saludable y hacer ejercicio"
+      },
+      {
+        "nombre": "Laura Sánchez",
+        "edad": 39,
+        "causa_de_visita": "Alergia",
+        "medicamento_recetado": "Cetirizina",
+        "observaciones": "Evitar alérgenos conocidos"
+      },
+      {
+        "nombre": "Carlos Mendoza",
+        "edad": 56,
+        "causa_de_visita": "Problemas digestivos",
+        "medicamento_recetado": "Omeprazol",
+        "observaciones": "Evitar comidas pesadas antes de dormir"
+      },
+      {
+        "nombre": "Sofía Ramírez",
+        "edad": 31,
+        "causa_de_visita": "Dolor de espalda",
+        "medicamento_recetado": "Ibuprofeno",
+        "observaciones": "Mantener una postura erguida y hacer estiramientos"
+      },
+      {
+        "nombre": "Daniel Ruiz",
+        "edad": 47,
+        "causa_de_visita": "Problemas respiratorios",
+        "medicamento_recetado": "Salbutamol",
+        "observaciones": "Usar el inhalador según las indicaciones"
+      },
+      {
+        "nombre": "Lucía Hernández",
+        "edad": 25,
+        "causa_de_visita": "Infección de garganta",
+        "medicamento_recetado": "Amoxicilina",
+        "observaciones": "Tomar la medicación completa"
+      },
+      {
+        "nombre": "Miguel Vargas",
+        "edad": 38,
+        "causa_de_visita": "Alergia",
+        "medicamento_recetado": "Loratadina",
+        "observaciones": "Evitar alérgenos y mantenerse en ambientes limpios"
+      },
+      {
+        "nombre": "Lorena Díaz",
+        "edad": 29,
+        "causa_de_visita": "Dolor de garganta",
+        "medicamento_recetado": "Pastillas para la garganta",
+        "observaciones": "Tomar las pastillas según las indicaciones"
+      },
+      {
+        "nombre": "Javier Guzmán",
+        "edad": 44,
+        "causa_de_visita": "Presión arterial alta",
+        "medicamento_recetado": "Losartán",
+        "observaciones": "Controlar la presión regularmente y evitar sal en la dieta"
+      },
+      {
+        "nombre": "Carmen Salazar",
+        "edad": 60,
+        "causa_de_visita": "Problemas digestivos",
+        "medicamento_recetado": "Dimeticona",
+        "observaciones": "Seguir una dieta suave y evitar alimentos irritantes"
+      },
+      {
+        "nombre": "Diego Ramos",
+        "edad": 22,
+        "causa_de_visita": "Dolor de estómago",
+        "medicamento_recetado": "Buscapina",
+        "observaciones": "Descansar y evitar comidas pesadas"
+      },
+      {
+        "nombre": "Elena Núñez",
+        "edad": 41,
+        "causa_de_visita": "Problemas respiratorios",
+        "medicamento_recetado": "Salbutamol",
+        "observaciones": "Usar el inhalador según las indicaciones"
+      },
+      {
+        "nombre": "Pablo León",
+        "edad": 33,
+        "causa_de_visita": "Dolor de cabeza",
+        "medicamento_recetado": "Ibuprofeno",
+        "observaciones": "Descansar y mantenerse hidratado"
+      },
+      {
+        "nombre": "Sara Gutiérrez",
+        "edad": 29,
+        "causa_de_visita": "Problemas de sueño",
+        "medicamento_recetado": "Melatonina",
+        "observaciones": "Crear una rutina de sueño regular"
+      },
+      {
+        "nombre": "Adrián Díaz",
+        "edad": 48,
+        "causa_de_visita": "Presión arterial alta",
+        "medicamento_recetado": "Enalapril",
+        "observaciones": "Controlar la presión regularmente"
+      },
+      {
+        "nombre": "Isabel Vega",
+        "edad": 34,
+        "causa_de_visita": "Gripe",
+        "medicamento_recetado": "Paracetamol",
+        "observaciones": "Descansar y mantenerse hidratada"
+      }
+    ]
+  }
+  

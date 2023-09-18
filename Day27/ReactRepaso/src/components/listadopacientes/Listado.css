@@ -1,0 +1,104 @@
+/* Listado.css */
+
+.listado-container {
+    margin: 20px 0;
+  }
+  
+  .paciente-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+  }
+  
+  .paciente-card:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .paciente-info {
+    margin-bottom: 10px;
+  }
+  
+  .paciente-info strong {
+    font-weight: bold;
+  }
+  
+  .paciente-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .paciente-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .paciente-buttons .editar-button {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .paciente-buttons .eliminar-button {
+    background-color: #FF0000;
+    color: #fff;
+  }
+  
+  .paciente-buttons button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Estilos para la pantalla emergente */
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .modal-content h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .modal-content button:hover {
+    opacity: 0.8;
+  }
+  
