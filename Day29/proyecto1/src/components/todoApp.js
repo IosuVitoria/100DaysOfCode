@@ -48,7 +48,7 @@ const TodoApp = () => {
                         className='todoInput'
                         value={title}
                         onChange={handleChange}
-                        placeholder="Ingresa el título del todo"
+                        placeholder="Ingresa la tarea"
                     />
                     <button
                         onClick={handleSubmit}
