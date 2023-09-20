@@ -1,0 +1,91 @@
+.PokemonList {
+    list-style: none;
+    flex: 1;
+    /* padding-right: 25px; */
+  }
+
+.pokemon-list__pokeball{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+ 
+.img__list {
+    width: 40px; 
+    height: 40px;
+    filter: grayscale(100%);
+    filter: grayscale(1);
+    transition: filter 0.3s ease-in-out;
+    transition: transform 0.1s;
+}
+  
+.img__list:hover {
+    animation: bounce 0.2s infinite;
+    filter: grayscale(0%);
+}
+  
+@keyframes bounce {
+    0%, 100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-3px); 
+    }
+}
+
+.PokemonList li{
+    list-style: none;
+    gap: 15px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(220, 220, 220);
+}
+
+.PokemonList li:hover{
+    cursor: pointer;
+    background-color: rgb(53, 52, 46);
+    color: white;
+}
+
+.button-container{
+    margin-top: 35px;
+    display: flex;
+    gap: 10px;
+    left: 5px;
+    position: relative;
+}
+
+.button-container button{
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: rgba(145, 145, 227, 0.8);
+    border: none;
+}
+.button-container button{
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: rgba(196, 196, 251, 0.8);
+    border: none;
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.button-container button:hover{
+    background-color: rgba(4, 4, 142, 0.8);
+    border: 1px solid rgb(125, 125, 248);
+    color:wheat;
+    cursor: pointer;
+    box-shadow: 1px 2px 1px 3px rgba(0, 0, 0, 0.353);
+    transform: translateY(-2px);
+    fill:wheat;
+}
+
+.pokeball__pag{
+    width: 20px;
+    height: auto;
+}
