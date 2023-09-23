@@ -1,0 +1,17 @@
+
+.Reloj {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+  
+.Reloj h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.Reloj p {
+    font-size: 32px;
+    margin: 0;
+}
+  

@@ -1,0 +1,102 @@
+body{
+  background-image: url('../../assets/fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.weather-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  max-width: 80%;
+  background-color: rgb(255 255 255 / 53%);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+  
+.get-weather {
+  display: flex;
+  margin-bottom: 10px;
+}
+  
+.get-weather input {
+  flex: 1 1;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 0px 4px 3px #858484d6;
+}
+
+.get-weather button {
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 0px 4px 3px #858484d6;
+}
+  
+
+.get-weather button:hover{
+  background-color: rgb(69, 69, 69);
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 4px 3px #858484d6;
+}
+
+.weather-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.day-forecast {
+  width: 100%;
+  margin-bottom: 20px;
+}
+  
+.day-forecast h3 {
+  text-align: center;
+  background: rgba(31, 71, 31, 0.852);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 4px 6px #7dff00a1;
+}
+  
+.day-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+.forecast-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  opacity: 0.9; 
+  background-color: #f9f9f9; 
+  box-shadow: 0px 0px 4px 3px #858484d6;
+}
+  
+.forecast-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  background: #bbbbeb9c;
+  border-radius: 50%;
+}
+  

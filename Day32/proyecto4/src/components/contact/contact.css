@@ -1,0 +1,97 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 300px;
+    background: #ffffff9e;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px 3px #858484d6;
+}
+
+.contact h2{
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contact__name{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin:10px;
+}
+
+.contact__name label{
+    font-weight: bold;
+}
+
+.contact__name input{
+    padding: 8px;
+    border-radius: 25px;
+    width: 100%;
+    border:none;
+    box-shadow: 0px 0px 4px 3px #858484d6;
+}
+
+.contact__email{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin:10px;
+}
+
+.contact__email label{
+    font-weight: bold;
+}
+
+.contact__email input{
+    padding: 8px;
+    border-radius: 25px;
+    width: 100%;
+    border:none;
+    box-shadow: 0px 0px 4px 3px #858484d6;
+}
+
+.contact__text{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin:10px;
+    
+}
+
+.contact__text label{
+    font-weight: bold;
+}
+
+.contact__text textarea{
+    padding: 8px;
+    border-radius: 25px;
+    width: 100%;
+    height: 150px;
+    max-height: 400px;
+    border:none;
+    box-shadow: 0px 0px 4px 3px #858484d6;
+}
+
+.contact__button{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    border:none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(74, 167, 74, 0.852);
+    font-weight: bold;
+    box-shadow: 0px 0px 4px 3px #858484d6;
+}
+
+.contact__button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(31, 71, 31, 0.852);
+    cursor: pointer;
+    transform: translateY(-1px);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 4px #1e1e1ed6;
+}
