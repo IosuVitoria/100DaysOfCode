@@ -1,0 +1,110 @@
+.panel{
+    background-color: #1e242e;
+    color: white;
+    padding: 35px;
+    border-radius: 40px;
+    width: 330px;
+    height: 335px;
+}
+
+.imageTop{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon{
+    background-color: #272e3f;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.panelTitle{
+    font-size: 32px;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 6px;
+}
+
+.panelText{
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #8e949e;
+}
+
+.ratingContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating{
+    background-color: #282e38;
+    border-radius: 100%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    color: white;
+} 
+
+.rating:hover{
+    background-color: #7d8796;
+    border: none;
+} 
+
+.rating:focus{
+    background-color: #fb7b19;
+    border:none
+} 
+
+.panelButton{
+    width: 100%;
+    border-radius: 25px;
+    background-color: #fb7b19;
+    padding: 12px;
+    color: white;
+    border: none;
+}
+
+.panelButton:hover{
+    background-color: white;
+    color: #fb7b19;
+}
+
+/* Thank you panel */
+
+.thankYouH3{
+    display: flex;
+    font-size: 13px;
+    margin-top: 25px;
+    font-weight: 400;
+    color: orange;
+    background: #2c3139;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 8px;
+    border-radius: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 20px;
+}
+
+.thankYouH4{
+    font-size: 28px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+.thankYouP{
+    margin: 0 auto;
+    margin-top: 9px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8e949e;
+}
