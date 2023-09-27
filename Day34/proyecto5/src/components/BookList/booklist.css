@@ -1,0 +1,140 @@
+.bookList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.bookCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9bb; 
+  padding: 30px;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px 8px rgba(101, 98, 98, 0.436);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  width: 90%;
+  min-height: 200px; 
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.bookCard:hover {
+  transform: translateY(-5px);
+}
+
+.bookCard h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.bookCard p {
+  margin: 0;
+  font-size: 1.1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookCard img{
+  width: 250px;
+  height: 350px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 3px 3px grey;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.score {
+  color: #ff5722;
+  font-weight: bold;
+  margin-top: 7px;
+  font-size: 1.9em;
+}
+
+.pagination{
+  display: flex;
+  margin: 0 auto;
+  gap: 15px;
+  margin-bottom: 220px;
+  justify-content: center;
+}
+
+.pagination button{
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgb(248, 218, 158);
+  box-shadow: 0 0 3px 4px  rgb(184, 161, 114);
+  border: none;
+}
+.pagination button:hover{
+  cursor: pointer;
+}
+
+.active{
+  background-color: rgb(242, 188, 80);
+  box-shadow: 0 0 3px 4px  rgb(108, 94, 67);
+  color: white;
+  width: 38px;
+  transform: translateY(-5px);
+  height: auto;
+}
+
+.booklist__h2{
+  background: #ffffffb5;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  box-shadow: 0 0 3px 4px #c9c2c2;
+  border: none;
+}
+
+.search-bar{
+    background: #ffffffbd;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 3px 4px #808080b0;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+.search-bar input{
+  padding: 5px; 
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 1px 2px #808080b0;
+}
+
+.bookCard {
+  max-height: 580px; 
+  overflow: hidden; 
+  transition: max-height 0.3s ease-out; 
+}
+
+
+.description {
+    max-height: none !important; 
+    word-wrap: break-word; 
+} 

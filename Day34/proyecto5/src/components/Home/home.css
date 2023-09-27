@@ -1,0 +1,116 @@
+
+  
+.welcome-section {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.708);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 6px rgba(221, 219, 219, 0.979);
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 18px;
+    width: 50%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+  
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.carousel img {
+    width: 99%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px 8px #bbbbbb63;
+  }
+  
+.content-section {
+    background: #ffffffb5;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 4px grey;
+}
+  
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5px;
+    margin-bottom: 250px;
+}
+  
+.links a {
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.links a:hover{
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(63, 62, 62, 0.615);
+    padding: 20px;
+    border-radius: 30px;
+    transform: translateY(-2px);
+}
+  
+.links a img {
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.link_explore{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    background-color: #ffffffb3;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 6px grey;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.link_contact{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffffb3;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 6px grey;
+    text-transform: uppercase;
+}
+
+.slick-dots{
+    bottom: -25px;
+    padding: 5px;
+    list-style: none;
+    background: #808080ba;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 40px;
+}
+
+.image-author{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}

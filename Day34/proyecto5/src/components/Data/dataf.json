@@ -1,0 +1,165 @@
+[
+    {
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "year": 1965,
+      "Description": "Dune es una saga de ciencia ficción que se desarrolla en un lejano futuro intergaláctico. La historia sigue a Paul Atreides, un joven noble destinado a convertirse en líder en un planeta desértico llamado Arrakis, conocido por su valiosa especia que otorga poderes sobrenaturales y políticos. La narrativa explora temas complejos como la política, la ecología, la religión y la evolución humana.",
+      "Country": "Estados Unidos",
+      "Score": 9.3,
+      "Image": "https://th.bing.com/th/id/R.72fa1274644ef13b53fb3c39374a8001?rik=3RtRNYupC9RK7g&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "Description": "1984 es una novela distópica que presenta un sombrío panorama de un futuro totalitario. La trama sigue a Winston Smith, un hombre que trabaja para el gobierno y lucha contra la opresión y la vigilancia omnipresente. La historia explora la manipulación del pensamiento, la supresión de la verdad y la lucha por la libertad individual en un mundo controlado por el Gran Hermano.",
+      "Country": "Reino Unido",
+      "Score": 9.2,
+      "Image": "https://th.bing.com/th/id/R.67928b41bc9b180c6533925d8ce59e5b?rik=nhEfNSqqcRrzVA&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "Neuromancer",
+      "author": "William Gibson",
+      "year": 1984,
+      "Description": "Neuromancer es una novela pionera del género ciberpunk. La trama sigue a Case, un hacker que busca la red global de información para obtener su libertad. La narrativa está repleta de tecnología avanzada, inteligencia artificial y una estética futurista, estableciendo las bases para el ciberpunk y explorando temas de identidad, corporaciones y realidad virtual.",
+      "Country": "Canadá",
+      "Score": 8.7,
+      "Image": "https://th.bing.com/th/id/R.8f31b3e3db47ad4c9eac2dec1b8e0bb1?rik=HiY%2bvqVLSNpA%2fQ&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "Foundation",
+      "author": "Isaac Asimov",
+      "year": 1951,
+      "Description": "Foundation es el comienzo de una épica saga de ciencia ficción que se extiende por milenios. La historia sigue la fundación de un imperio galáctico y las predicciones matemáticas del psicohistoriador Hari Seldon. La narrativa explora la caída y ascenso de civilizaciones y aborda temas de ciencia, política y el futuro de la humanidad en el espacio.",
+      "Country": "Estados Unidos",
+      "Score": 8.6,
+      "Image": "https://th.bing.com/th/id/OIP.zA5ssejgKRt_GIOTfRiImQHaMC?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "year": 1932,
+      "Description": "Brave New World es una novela distópica que presenta una sociedad futura altamente tecnificada y controlada. Explora la manipulación genética, la uniformidad social y la alienación. La trama sigue a Bernard Marx mientras lucha por encajar en este mundo altamente estructurado mientras cuestiona las normas y la pérdida de la individualidad.",
+      "Country": "Reino Unido",
+      "Score": 8.5,
+      "Image": "https://th.bing.com/th/id/OIP.zAAlBj4hPWUco2OCigRcQgHaLK?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "year": 1979,
+      "Description": "The Hitchhiker's Guide to the Galaxy es una serie de ciencia ficción cómica que sigue las aventuras de Arthur Dent, un humano que escapa de la destrucción de la Tierra con la ayuda de un extraterrestre llamado Ford Prefect. La narrativa es absurda y humorística, explorando temas como la existencia, el sentido de la vida y el universo.",
+      "Country": "Reino Unido",
+      "Score": 8.4,
+      "Image": "https://th.bing.com/th/id/OIP.6lE_KV_vkckc3Ey-TSvHuwHaLJ?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Snow Crash",
+      "author": "Neal Stephenson",
+      "year": 1992,
+      "Description": "Snow Crash es una novela ciberpunk que presenta un futuro distópico en América. La trama sigue a Hiro Protagonist, un hacker y repartidor de pizzas que investiga un virus de realidad virtual llamado Snow Crash. La narrativa explora la tecnología, la cultura y la lingüística en un entorno distópico y de alta energía.",
+      "Country": "Estados Unidos",
+      "Score": 8.3,
+      "Image": "https://th.bing.com/th/id/OIP.Nv8z9NpkySPRPtCnT_i13wAAAA?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Ender's Game",
+      "author": "Orson Scott Card",
+      "year": 1985,
+      "Description": "Ender's Game es una novela de ciencia ficción militar que sigue a Andrew 'Ender' Wiggin, un joven prodigio reclutado para entrenar en la Escuela de Batalla para defender la Tierra contra una amenaza alienígena. La narrativa explora la guerra, la manipulación y la identidad en un contexto militar futurista.",
+      "Country": "Estados Unidos",
+      "Score": 8.2,
+      "Image": "https://th.bing.com/th/id/R.329792f14ea3a04b3cbe77fa736fb661?rik=BLvFXnSfUv6o8g&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "year": 1898,
+      "Description": "The War of the Worlds es una novela de ciencia ficción que narra la invasión de la Tierra por marcianos. La historia sigue el terror y la lucha por la supervivencia de la humanidad contra una fuerza alienígena superior. La narrativa fue innovadora en su época y explora el miedo a lo desconocido y las consecuencias de la invasión.",
+      "Country": "Reino Unido",
+      "Score": 8.1,
+      "Image": "https://th.bing.com/th/id/R.c5a63d84f1e6cbb984f61bdc50043441?rik=G%2ftT9vmoV8SG8w&riu=http%3a%2f%2fimages.macmillan.com%2ffolio-assets%2fmacmillan_us_frontbookcovers_1000H%2f9780812505153.jpg&ehk=1j96MgNFP9hvI6M7qdniPxF53jgZJi45GzlGMqmO6KQ%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "The Left Hand of Darkness",
+      "author": "Ursula K. Le Guin",
+      "year": 1969,
+      "Description": "The Left Hand of Darkness es una novela de ciencia ficción que desafía las normas de género. Ambientada en el planeta Gethen, explora temas de género y sexualidad a través de un mensajero interestelar y su experiencia en un mundo donde las personas no tienen un género fijo.",
+      "Country": "Estados Unidos",
+      "Score": 8,
+      "Image": "https://th.bing.com/th/id/R.12009ff1d971daad9d980bb00bbfcf24?rik=QuBTMRkK%2fHyt6g&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "Hyperion",
+      "author": "Dan Simmons",
+      "year": 1989,
+      "Description": "Hyperion es una novela de ciencia ficción que presenta una estructura similar a los Cantos de Canterbury, donde cada personaje cuenta su historia. La trama se desarrolla en un futuro lejano y explora temas de religión, inteligencia artificial y mitología.",
+      "Country": "Estados Unidos",
+      "Score": 7.9,
+      "Image": "https://th.bing.com/th/id/OIP.i9b_JgR493NbkVTCHJmo_gHaLa?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "The Time Machine",
+      "author": "H.G. Wells",
+      "year": 1895,
+      "Description": "The Time Machine es una novela corta de ciencia ficción que introduce el concepto del viaje en el tiempo utilizando una máquina. La trama sigue a un viajero en el tiempo que experimenta el futuro y explora el declive y evolución de la humanidad.",
+      "Country": "Reino Unido",
+      "Score": 7.8,
+      "Image": "https://th.bing.com/th/id/R.b6ce1fd34df5089fcaba3c0a53627e8c?rik=FAqAEQ6bs%2fnXGQ&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "year": 1953,
+      "Description": "Fahrenheit 451 es una novela distópica en la que los libros están prohibidos y son quemados. La trama sigue a Montag, un bombero encargado de destruir libros, mientras lucha por comprender el valor de la literatura y la libertad de pensamiento.",
+      "Country": "Estados Unidos",
+      "Score": 7.7,
+      "Image": "https://th.bing.com/th/id/OIP.MqaDP8mjYoRA30lgqotUHQHaLP?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "The Forever War",
+      "author": "Joe Haldeman",
+      "year": 1974,
+      "Description": "The Forever War es una novela de ciencia ficción militar que aborda temas de guerra, identidad y desafíos de la sociedad. Sigue la historia de William Mandella, un soldado enviado a luchar en una guerra interestelar y su experiencia a lo largo de los siglos debido a la relatividad del tiempo.",
+      "Country": "Estados Unidos",
+      "Score": 7.6,
+      "Image": "https://th.bing.com/th/id/R.95c205fc67304b48aba55de479f67e6b?rik=m9eyIRZLBa6e9g&pid=ImgRaw&r=0"
+    },
+    {
+      "title": "I, Robot",
+      "author": "Isaac Asimov",
+      "year": 1950,
+      "Description": "I, Robot es una colección de relatos de ciencia ficción que exploran las leyes de la robótica y la interacción entre humanos y robots. Cada relato presenta escenarios éticos y tecnológicos relacionados con la inteligencia artificial y la robótica.",
+      "Country": "Estados Unidos",
+      "Score": 7.5,
+      "Image": "https://th.bing.com/th/id/R.c23bcbc4d84a767031b87c668ed4c876?rik=6Mb8mOyTyiA19g&riu=http%3a%2f%2fwww.sfreviews.net%2flarge_covers%2firobot.jpg&ehk=IKtdpe4mA2LfQeRB5fSWWir1GOdUg3rn20kelrZE568%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+    },
+    {
+      "title": "The Martian Chronicles",
+      "author": "Ray Bradbury",
+      "year": 1950,
+      "Description": "The Martian Chronicles es una colección de relatos de ciencia ficción interconectados que exploran la colonización de Marte por parte de la humanidad. La narrativa aborda temas como la colonización, la decadencia de la civilización y la interacción entre diferentes culturas.",
+      "Country": "Estados Unidos",
+      "Score": 7.4,
+      "Image": "https://th.bing.com/th/id/OIP.lYOsdbige4bd-Gzd0yNQqgHaL-?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Childhood's End",
+      "author": "Arthur C. Clarke",
+      "year": 1953,
+      "Description": "Childhood's End es una novela de ciencia ficción que presenta la llegada de seres alienígenas a la Tierra y su impacto en la humanidad. La historia explora la evolución de la raza humana y la búsqueda de la perfección.",
+      "Country": "Reino Unido",
+      "Score": 7.3,
+      "Image": "https://th.bing.com/th/id/OIP.Kwac_pZe3IPOQ_gHeJx56AHaMd?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Starship Troopers",
+      "author": "Robert A. Heinlein",
+      "year": 1959,
+      "Description": "Starship Troopers es una novela de ciencia ficción militar que explora la vida y carrera de un joven en una sociedad militarizada. La narrativa aborda temas de ciudadanía, deber, guerra y autoritarismo.",
+      "Country": "Estados Unidos",
+      "Score": 7.2,
+      "Image": "https://th.bing.com/th/id/OIP.tAuAFdEyISLyYMzQobiJSAHaLZ?w=186&h=287&c=7&r=0&o=5&pid=1.7"
+    }
+  ]
+  
