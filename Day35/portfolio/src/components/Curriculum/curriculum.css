@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.resume{
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background:#7371a874;
+    box-shadow: 0 2px 4px 4px #7371a874;
+    color: white;
+    margin-bottom: 140px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__title {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 25px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.752);
+    box-shadow: 0px 3px 4px 4px rgba(255, 255, 255, 0.752);
+    align-items: center;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.header__title h1{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+.header__title h4{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.header__cv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 3px 4px rgba(255, 255, 255, 0.7);
+    width: 25%;
+    justify-content: center;
+}
+
+.header__cv:hover{
+    background-color: rgba(71, 70, 70, 0.76);
+    color:white;
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 3px 4px rgba(71, 70, 70, 0.7);
+    cursor: pointer;
+}
+
+.header__cv img{
+    width: 30px;
+    height: auto;
+}
+
+.header__content{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header__content__h6{
+    margin-top: 7px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.header__content__nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.header__content__nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.education__header__h1,
+.laboral__experience__header__h1{
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.711);
+    color: black;
+    box-shadow: 0px 3px 3px 4px rgba(255, 255, 255, 0.711);
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.experience__first,
+.experience__second,
+.experience__last {
+    margin-bottom: 20px;
+    background-color: rgba(137, 144, 242, 0.693);
+    box-shadow: 0px 3px 3px 3px rgba(137, 144, 242, 0.693);
+    width: 40%;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    margin-top: 45px;
+
+}
+
+.experience__first img,
+.experience__second img,
+.experience__last img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.experience__header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.experience__header h4, h5, h6{
+    font-size: 16px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+  
+.experience__content{
+    font-size: 16px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.experience__previous {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.experience__first,
+.experience__second {
+    width: 40%;
+}
+
+
+.bootcamp__formation__header{
+    display: flex;
+    text-transform: uppercase;
+    gap: 40px;
+    width: 70%;
+    margin: 0 auto;
+
+    margin-bottom: 30px;
+}
+
+.bootcamp__formation__header img{
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.bootcamp__formation__header__dates h4, h5{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.bootcamp__formation__header__content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.bootcamp__formation__header__content p{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.bootcamp__formation{
+    background-color: rgba(137, 144, 242, 0.693);
+    box-shadow: 0px 3px 3px 3px rgba(137, 144, 242, 0.693);
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.bootcamp__formation__stack{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bootcamp__formation__stack ul{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+.bootcamp__formation__tec h5{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.bootcamp__formation__stack__img{
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.university__formation{
+    background-color: rgba(137, 144, 242, 0.693);
+    box-shadow: 0px 3px 3px 3px rgba(137, 144, 242, 0.693);
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.university__formation img{
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+.university__formation__degree__header h3, p{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}

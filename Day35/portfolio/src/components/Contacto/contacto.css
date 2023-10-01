@@ -1,0 +1,115 @@
+.contact {
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: #ffffffad;
+    margin-bottom: 200px;
+}
+ 
+.contact__title{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.contact .language-buttons {
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+}
+  
+.contact .language-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-right: 10px;
+    width: 20%;
+    height: 80px;
+    border-radius: 20px;
+}
+  
+.contact .language-button.active {
+    font-weight: bold;
+    background-color: rgba(162, 159, 159, 0.631);
+}
+
+.language-button{
+    cursor: pointer;
+}
+  
+.contact .header {
+    margin-bottom: 20px;
+}
+  
+.contact .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+  
+.contact .contact-form input,
+.contact .contact-form textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.624);
+    box-shadow: 0 0 3px 4px rgba(225, 220, 220, 0.684);
+    border-radius: 25px;
+    border:none;
+}
+
+.contact__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact__info{
+    font-family: bolder;
+}
+
+.contact-form textarea{
+    height: 200px;
+}
+  
+.contact .contact__button {
+    padding: 10px;
+    background-color: rgba(71, 71, 104, 0.849);
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 4px rgba(71, 71, 104, 0.4);
+    display: flex;
+    margin: 0 auto;
+}
+  
+.contact .contact__button:hover {
+    background-color: #5e5dae;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 9px #2a2a4f;
+    transform: translateY(-3px);
+}
+  
+.contact .contact__button i {
+    margin-left: 10px;
+}
+
+.button-img{
+    width: 80px;
+    background-color: white;
+    box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.684);
+    border-radius: 10px;
+}
+
+.fontawesome-icon{
+    margin-left: 8px;
+}

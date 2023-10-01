@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.blog__post{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background:#7371a874;
+    box-shadow: 0 2px 4px 4px #7371a874;
+    color: black;
+    margin-bottom: 140px;
+}
+
+
+.blog__post__content{
+    margin-top: 25px;
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    gap: 20px;
+    background: #ffffffad;
+    border: 2px solid #c2c1c1;
+    box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.636);
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.blog__post__content__img{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.636);
+    align-items: center;
+    border-radius: 25px;
+}
+
+.blog__post__content__text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog__post__content__data{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-start;
+    text-align: flex-start;
+    background: #ffffffad;
+    border: 2px solid #c2c1c1;
+    box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.636);
+    width: 70%;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.comments h3{
+    display: flex;
+    width: 70%;
+    background: #ffffffad;
+    border: 2px solid #c2c1c1;
+    box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.636);
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.comment__form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+    background: #ffffffad;
+    border: 2px solid #c2c1c1;
+    box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.636);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.comment__form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.comment__form form input, textarea{
+    padding: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.716);
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.716);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.comment__form button{
+    padding: 10px;
+    background-color: rgba(71, 71, 104, 0.849);
+    justify-content: center;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 4px rgba(71, 71, 104, 0.4);
+    display: flex;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+.comment__form button:hover{
+    background-color: #5e5dae;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 9px #2a2a4f;
+    transform: translateY(-3px);
+}
