@@ -43,7 +43,7 @@ const Contacto = () => {
 
       <div className='contact__info'>
         <h3>{idioma === 'es' ? 'Dirección:' : 'Address:'}</h3>
-        <p> 01009 Vitoria-Gasteiz, España</p>
+        <p> 01009, Vitoria-Gasteiz (España)</p>
         <h3>{idioma === 'es' ? 'Correo:' : 'Email:'} </h3>
         <p>iosugvaldecantos@gmail.com</p>
       </div>

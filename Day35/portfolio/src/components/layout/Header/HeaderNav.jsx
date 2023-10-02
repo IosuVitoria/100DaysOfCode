@@ -7,7 +7,7 @@ const HeaderNav = () => {
     <header>
         <div className='header__top'>
             <img src={PersonalLogo} alt="Imagen de marca" />
-            <h2>Iosu Gómez Full Stack Junior</h2>
+            <h2>Iosu Gómez - Full Stack Developer Jr</h2>
         </div>
         <div className='header__top__decorator'></div>  
         <nav>
