@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <h2 class="page__title">Ingrese datos arriba y abajo para cada columna:</h2>
+    
+    <div class="container">
+      <div class="column">
+        <label for="a1">Introduce voltaje celda 1</label>
+        <input type="number" id="a1" placeholder="Arriba">
+        <label for="b1">Introduce voltaje celda 2</label>
+        <input type="number" id="b1" placeholder="Abajo">
+      </div>
+      <div class="column">
+        <label for="a2">Introduce voltaje celda 3</label>
+        <input type="number" id="a2" placeholder="Arriba">
+        <label for="b2">Introduce voltaje celda 4</label>
+        <input type="number" id="b2" placeholder="Abajo">
+      </div>
+      <div class="column">
+        <label for="a3">Introduce voltaje celda 5</label>
+        <input type="number" id="a3" placeholder="Arriba">
+        <label for="b3">Introduce voltaje celda 6</label>
+        <input type="number" id="b3" placeholder="Abajo">
+      </div>
+      <div class="column">
+        <label for="a4">Introduce voltaje celda 7</label>
+        <input type="number" id="a4" placeholder="Arriba">
+        <label for="b4">Introduce voltaje celda 8</label>
+        <input type="number" id="b4" placeholder="Abajo">
+      </div>
+    </div>
+    
+    <div id="resultado">
+      <h2>Máxima diferencia voltaje</h2>
+      <p id="maxDif1"></p>
+    </div>
+    
+    <button class="page__button" type="submit" onclick="verificarDiferencia()">Introducir datos</button>
+    
+    </body>
+    </html>
