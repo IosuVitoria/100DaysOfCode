@@ -8,6 +8,7 @@ import TableCell from '@mui/material/TableCell';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import { makeStyles } from '@mui/styles';
+import Introduction from "../Introduction/Introduction"
 
 const useStyles = makeStyles({
   pageContainer: {
@@ -30,6 +31,12 @@ const useStyles = makeStyles({
     justifyContent: 'flex-end',
     marginTop: '20px',
   },
+  title: {
+    fontSize: "26px",
+    color: "white",
+    textTransform: "uppercase",
+    marginTop: "40px"
+  }
 });
 
 const firstNames = [
@@ -69,7 +76,8 @@ const Tabla = () => {
 
   return (
     <div className={classes.pageContainer}>
-      <h1>Lista de Alumnos y Notas</h1>
+      <Introduction />
+      <h1 className={classes.title}>Lista de Alumnos y Notas</h1>
       <TableContainer component={Paper} className={classes.tableContainer}>
         <Table className={classes.table}>
           <TableHead>
