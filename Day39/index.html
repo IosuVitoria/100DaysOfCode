@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifrado César</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Cifrado César</h1>
+
+    <p>
+      El cifrado César es un tipo de cifrado por sustitución en el que cada letra en el texto es desplazada un cierto número de lugares en el alfabeto. Para cifrar un mensaje:
+    </p>
+    <ol>
+      <li>Ingrese su mensaje en el campo de texto "Mensaje".</li>
+      <li>Ingrese el desplazamiento deseado en el campo "Desplazamiento". Este valor determinará cuántas posiciones se moverán las letras en el alfabeto.</li>
+      <li>Haga clic en "Cifrar" para ver el mensaje cifrado en el área de resultado.</li>
+    </ol>
+
+    <label for="message">Mensaje:</label>
+    <input type="text" id="message" placeholder="Ingrese su mensaje">
+
+    <label for="shift">Desplazamiento:</label>
+    <input type="number" id="shift" placeholder="Ingrese el desplazamiento">
+
+    <button onclick="encrypt()">Cifrar</button>
+
+    <label for="result">Resultado:</label>
+    <textarea id="result" rows="4" cols="50" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
