@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Mensajes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script2.js" defer></script>
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Decodificador de Mensajes</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="decoder-form">
+                <h2>Decodificar un Mensaje</h2>
+                <p>Ingrese números del 1 al 26 separados por comas. Por ejemplo: 8,15,12,1</p>
+                <label for="numbers-input">Números:</label>
+                <input type="text" id="numbers-input" placeholder="Ejemplo: 8,15,12,1" required>
+                <button type="submit">Decodificar</button>
+            </form>
+
+            <div class="result">
+                <h2>Resultado:</h2>
+                <p id="decoded-message">Aquí aparecerá el mensaje decodificado.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <section class="footer-links">
+            <div class="social__links">
+                <a href="https://www.linkedin.com/in/iosu-gomez-biologo-analista/" target="_blank">
+                    Iosu<img src="./assets/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/IosuVitoria" target="_blank">
+                    IosuVitoria<img src="./assets/github.png" alt="GitHub">
+                </a>
+            </div>
+        </section>
+
+        <p>&copy; 2023 Iosu Gómez Decoders</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
