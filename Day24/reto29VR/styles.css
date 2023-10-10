@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    background-color: #222;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #333;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor de filtros */
+.filters-container {
+    text-align: center;
+    margin: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background: #ff6347b0;
+    margin-top: 20px;
+    border-radius: 15px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(50, 39, 39, 0.5);
+    box-shadow: 2px 2px 6px 8px rgba(230, 223, 223, 0.1);
+}
+
+/* Etiqueta de filtro */
+.filter-label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Selector de filtro */
+#nombre, #anio {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #d9534f;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    color: #222;
+    text-align: center;
+}
+
+#filter-select{
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #d9534f;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    color: #222;
+    text-align: center;
+}
+
+/* Botón de búsqueda */
+#buscar {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de películas */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjeta de película */
+.movie-card {
+    flex: calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+/* Imagen de la película */
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 15px 15px;
+    object-fit: cover;
+    object-position: center;
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Título de la película */
+.movie-card h2 {
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Descripción de la película */
+.movie-card p {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Paginación */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Botones de paginación */
+.pagination button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+
+/* Botón de paginación activo */
+.pagination button.active {
+    background-color: #5bc0de;
+}
