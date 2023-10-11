@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./assets/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+  
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #cdcdcdd9;
+    box-shadow: 0 0 3px 3px #cdcdcdd9;
+}
+  
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+  
+textarea {
+    width: 96%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 3px #ffffffd9;
+}
+  
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: lightgray;
+    color: white;
+    font-weight: 900;
+    box-shadow: 0px 0px 3px 3px lightgray;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: grey;    
+    box-shadow: 0px 0px 3px 3px gray;
+    cursor: pointer;
+
+}
+  
+#results {
+    margin-top: 20px;
+}
+  
+#results ul {
+    list-style: none;
+    padding: 0;
+}
+  
+#results ul li {
+    margin-bottom: 10px;
+}
+  
+.hidden {
+    display: none;
+}
+  

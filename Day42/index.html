@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de Texto</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Análisis de Texto</h1>
+    <textarea id="textInput" placeholder="Ingresa tu texto aquí"></textarea>
+    <button onclick="analyzeText()">Analizar</button>
+    <div id="results" class="hidden">
+      <h2>Resultados:</h2>
+      <ul>
+        <li>Número total de palabras: <span id="wordCount"></span></li>
+        <li>Longitud media de las palabras: <span id="averageWordLength"></span></li>
+        <li>Número de oraciones: <span id="sentenceCount"></span></li>
+        <li>Palabra más larga: <span id="longestWord"></span></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./script.js" defer></script>
+</body>
+</html>
