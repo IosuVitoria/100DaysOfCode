@@ -1,0 +1,32 @@
+.calculator-container {
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 50px;
+    background: #515151;
+    box-shadow: 0 0 3px 3px #515151;
+
+}
+  
+.input__field,
+.result__text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #9694ffd3;
+    box-shadow: 0 0 1px 1px #9694ff7d;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+}
+  
+.button {
+    height: 60px;
+    font-size: 20px;
+    width: 100%;
+}
+  
+
+  
