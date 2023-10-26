@@ -1,0 +1,44 @@
+.navigation-menu {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+  
+.navigation-menu ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.navigation-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+  
+.navigation-menu button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.navigation-menu button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+.editor-content,
+.paint-content,
+.buscaminas-content {
+    display: none;
+    padding: 20px;
+}
+  
+.editor-content.active,
+.paint-content.active,
+.buscaminas-content.active {
+    display: block;
+}
+  

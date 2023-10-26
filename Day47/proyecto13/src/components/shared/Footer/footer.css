@@ -1,0 +1,44 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, times, calibri;
+    line-height: 20px;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+  
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer ul li {
+    margin-bottom: 5px;
+}
+  
+.footer p {
+    font-size: 14px;
+    margin: 0;
+}
+  
+.footer a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+  
