@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("./assets/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.container:hover {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 96%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    color: #666;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #008CBA;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#agregar-asignatura,
+button[type="submit"] {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 24px;
+    cursor: pointer;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 18px;
+}
+
+#agregar-asignatura:hover,
+button[type="submit"]:hover {
+    background-color: #FF1E18;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border: 2px solid #666;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 2px solid #666;
+    padding: 16px;
+    font-size: 16px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+}
+
+
+.instructions {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+    margin-bottom: 20px;
+}
+
+.instructions h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.instructions ol {
+    list-style-position: inside;
+    padding: 0;
+    text-align: justify; 
+}
+
+.instructions li {
+    font-size: 18px;
+    color: #444;
+    margin: 15px 0;
+    text-align: justify; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+

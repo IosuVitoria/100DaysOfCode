@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="./script.js" defer></script>
+        
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Notas</h1>
+        <div class="instructions">
+            <h2>Instrucciones de Uso</h2>
+            <ol>
+                <li>Introduce el nombre del alumno en el campo "Nombre del Alumno".</li>
+                <li>Para cada asignatura:
+                    <ul>
+                        <li>Ingresa el nombre de la asignatura en el campo correspondiente.</li>
+                        <li>Ingresa la nota del alumno para cada trimestre.</li>
+                    </ul>
+                </li>
+                <li>Puedes hacer clic en "Agregar Asignatura" para añadir más asignaturas.</li>
+                <li>Cuando hayas ingresado todos los datos, haz clic en "Calcular Medias".</li>
+                <li>La tabla mostrará las notas por trimestre, el promedio y la evaluación para cada asignatura.</li>
+            </ol>
+        </div>
+        <form id="notas-form">
+            <label for="nombre">Nombre del Alumno:</label>
+            <input type="text" id="nombre" required>
+
+            <button id="agregar-asignatura" type="button">Agregar Asignatura</button>
+            <div id="asignaturas-inputs">
+                <!-- Aquí se agregarán los campos de entrada para las asignaturas y notas -->
+            </div>
+
+            <button type="submit">Calcular Medias</button>
+        </form>
+
+        <table id="result-table">
+            <!-- Aquí se mostrará la tabla con las notas y la evaluación -->
+        </table>
+    </div>
+      
+</body>
+</html>
