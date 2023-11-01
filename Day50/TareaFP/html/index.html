@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Hipoteca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador Hipoteca</h1>
+        
+        <div id="primeraParte" class="formulario">
+            <h2>PRIMERO: Simulación de diferentes opciones de interés y plazo</h2>
+            <p>Ingresa el monto del préstamo (euros) y pulsa "Calcular" para ver las opciones disponibles:</p>
+            <label for="montoPrestamo">Monto del préstamo (euros):</label>
+            <input type="text" id="montoPrestamo">
+            <button id="calcularPrimeraParte">Calcular</button>
+            <table id="tablaPrimeraParte"></table>
+        </div>
+        
+        <!-- Formulario para la segunda parte -->
+        <div id="segundaParte" class="formulario">
+            <h2>SEGUNDO: Cálculos detallados del préstamo</h2>
+            <p>Ingresa los datos del préstamo y pulsa "Calcular" para obtener los detalles:</p>
+            <div class="form__organaiser">
+                <label for="montoPrestamo2">Monto del préstamo (euros):</label>
+                <input type="text" id="montoPrestamo2">
+                <label for="tasaInteres">Tasa de interés anual (%):</label>
+                <input type="text" id="tasaInteres">
+                <label for="plazo">Plazo (años):</label>
+                <input type="text" id="plazo">
+                <button id="calcularSegundaParte">Calcular</button>
+                <table id="tablaSegundaParte"></table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

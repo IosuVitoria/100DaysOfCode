@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("./assets/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+h1 {
+    color: #0074cc;
+    text-transform: uppercase;
+    text-shadow: #0074cc;
+}
+
+.formulario {
+    background-color: #f5f5f5;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 96%;
+    padding: 5px;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 0 0 1px 2px rgb(105, 105, 105);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #5b7990;
+    box-shadow: 0 0 3px 4px #5b799092;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+button:hover{
+    transform: translateY(-1px);
+    cursor: pointer;
+    background-color: #4892ca;
+    font-weight: bolder;
+}
+
+#montoPrestamo{
+    border-radius: 15px;
+    border:none;
+    box-shadow: 0 0 1px 2px rgb(105, 105, 105);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #0074cc;
+    color: #fff;
+    text-align: center;
+}
+
+#tablaPrimeraParte, #tablaSegundaParte {
+    display: none;
+}
+
+#calcularSegundaParte{
+    width: 20%;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.form__organaiser{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
