@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 10000;
+}
+  
+.footer p {
+    margin-top: 10px;
+}
+  
+.social-icons {
+    margin-top: 10px;
+}
+  
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.social-icons a:hover {
+    color: #3498db;
+}
+  

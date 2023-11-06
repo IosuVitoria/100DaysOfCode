@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+.nav {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  background: linear-gradient(90deg, #4eb4f8, #fb4fd8) ;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+  
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav__img{
+  width: 80px;
+  height: auto;
+}
+
+.nav li {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: #fff;
+}
+  
+.nav li:hover {
+  transform: translateY(-3px);
+  font-size: 17px;
+}
+  
+  .nav li.active {
+    font-weight: bold;
+  }
+  
+  /* Agrega más estilos según tus preferencias */
+  

@@ -1,0 +1,80 @@
+body{
+    background-image: url('./assets/fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact__general{
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 25px;
+    padding-bottom: 60px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact__name input,
+.contact__email input,
+.contact__text textarea{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 15px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 1px 2px rgb(79, 78, 78);
+}
+
+.contact__name label,
+.contact__email label,
+.contact__text label{
+    font-weight: bolder;
+}
+
+.contact__name,
+.contact__email,
+.contact__text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__text textarea{
+    height: 200px;
+}
+
+.contact__button{
+    text-align: center;
+    width: 150px;
+    background:linear-gradient(90deg, #4eb4f8, #fb4fd8) ;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.idioms{
+    width: 25px;
+    height: auto;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+.contact__button:hover{
+    font-weight: bolder;
+    cursor: pointer;
+    background:linear-gradient(90deg, #275a7c, #6f215f) ;
+    box-shadow: 0 0 1px 2px grey;
+    transform: translateY(-1px);
+}
