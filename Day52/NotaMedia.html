@@ -1,204 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Notas</title>
     <style>
-        /* Estilos CSS aquí */
-        /* Estilos CSS aquí */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    text-align: center;
-}
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 600px;
+            text-align: center;
+        }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-form {
-    text-align: left;
-    padding: 10px;
-}
+        form {
+            text-align: left;
+            padding: 10px;
+        }
 
-label, input, button {
-    display: block;
-    margin: 10px 0;
-}
+        label, input, button {
+            display: block;
+            margin: 10px 0;
+        }
 
-input[type="number"], input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
 
-button[type="button"] {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
+        button[type="button"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-button[type="button"]:hover {
-    background-color: #0056b3;
-}
+        button[type="button"]:hover {
+            background-color: #0056b3;
+        }
 
-#notaForm, #resultado {
-    display: none;
-}
+        #resultado {
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            display: none;
+        }
 
-#resultado {
-    text-align: left;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Calculadora de Notas</h1>
-        <form id="unidadForm">
-            <label for="unidades">Número de Unidades Didácticas:</label>
-            <input type="number" id="unidades" required>
-            <label for="nombreAsignatura">Nombre de la Asignatura:</label>
-            <input type="text" id="nombreAsignatura" required>
+        <form id="notaForm">
             <label for="nombreEstudiante">Nombre del Estudiante:</label>
             <input type="text" id="nombreEstudiante" required>
-            <button type="button" id="submitUnidades">Siguiente</button>
+
+            <label for="numUnidades">Número de Unidades Didácticas:</label>
+            <input type="number" id="numUnidades" required>
+
+            <button type="button" id="generarTabla">Generar Tabla</button>
+            <button type="button" id="calcularMedias" style="display:none;">Calcular Medias</button>
         </form>
 
-        <form id="notaForm">
-            <div id="notaInputs">
-                <!-- Campos de entrada de notas se generarán aquí -->
-            </div>
-            <button type="button" id="calcularNotas">Calcular Nota Final</button>
-        </form>
+        <div id="resultado"></div>
 
-        <div id="resultado">
-            <h2>Resultados</h2>
-            <p>Nombre del Estudiante: <span id="nombreEstudianteResultado"></span></p>
-            <p>Nombre de la Asignatura: <span id="nombreAsignaturaResultado"></span></p>
-            <p>Nota Final: <span id="notaFinal"></span></p>
-        </div>
-    </div>
+        <script>
+            document.getElementById('generarTabla').addEventListener('click', function() {
+                const numUnidades = parseInt(document.getElementById('numUnidades').value);
 
-    <script>
-        document.getElementById('submitUnidades').addEventListener('click', function() {
-            const unidades = parseInt(document.getElementById('unidades').value);
-            const nombreAsignatura = document.getElementById('nombreAsignatura').value;
-            const nombreEstudiante = document.getElementById('nombreEstudiante').value;
-
-            if (!unidades || unidades <= 0 || !nombreAsignatura || !nombreEstudiante) {
-                alert('Por favor, complete todos los campos con datos válidos.');
-                return;
-            }
-
-            // Generar campos de entrada de notas y pesos dinámicamente
-            const notaInputs = document.getElementById('notaInputs');
-            notaInputs.innerHTML = '';
-
-            for (let i = 1; i <= unidades; i++) {
-                const div = document.createElement('div');
-                div.classList.add('unidad-didactica');
-
-                const labelNotaParcial = document.createElement('label');
-                labelNotaParcial.textContent = `Nota del Examen Parcial (Unidad ${i}):`;
-                div.appendChild(labelNotaParcial);
-
-                const inputNotaParcial = document.createElement('input');
-                inputNotaParcial.type = 'number';
-                inputNotaParcial.step = '0.01';
-                inputNotaParcial.required = true;
-                div.appendChild(inputNotaParcial);
-
-                const labelNotaFinal = document.createElement('label');
-                labelNotaFinal.textContent = `Nota del Examen Final (Unidad ${i}):`;
-                div.appendChild(labelNotaFinal);
-
-                const inputNotaFinal = document.createElement('input');
-                inputNotaFinal.type = 'number';
-                inputNotaFinal.step = '0.01';
-                inputNotaFinal.required = true;
-                div.appendChild(inputNotaFinal);
-
-                const labelPesoParcial = document.createElement('label');
-                labelPesoParcial.textContent = `Peso del Examen Parcial (%) (Unidad ${i}):`;
-                div.appendChild(labelPesoParcial);
-
-                const inputPesoParcial = document.createElement('input');
-                inputPesoParcial.type = 'number';
-                inputPesoParcial.required = true;
-                div.appendChild(inputPesoParcial);
-
-                const labelPesoFinal = document.createElement('label');
-                labelPesoFinal.textContent = `Peso del Examen Final (%) (Unidad ${i}):`;
-                div.appendChild(labelPesoFinal);
-
-                const inputPesoFinal = document.createElement('input');
-                inputPesoFinal.type = 'number';
-                inputPesoFinal.required = true;
-                div.appendChild(inputPesoFinal);
-
-                notaInputs.appendChild(div);
-            }
-
-            document.getElementById('unidadForm').style.display = 'none';
-            document.getElementById('notaForm').style.display = 'block';
-        });
-
-        document.getElementById('calcularNotas').addEventListener('click', function() {
-            const unidades = parseInt(document.getElementById('unidades').value);
-            let totalNotas = 0;
-            let totalPeso = 0;
-
-            for (let i = 1; i <= unidades; i++) {
-                const notaParcial = parseFloat(document.querySelector(`.unidad-didactica:nth-child(${i}) input:nth-child(2)`).value);
-                const notaFinal = parseFloat(document.querySelector(`.unidad-didactica:nth-child(${i}) input:nth-child(4)`).value);
-                const pesoParcial = parseInt(document.querySelector(`.unidad-didactica:nth-child(${i}) input:nth-child(6)`).value);
-                const pesoFinal = parseInt(document.querySelector(`.unidad-didactica:nth-child(${i}) input:nth-child(8)`).value);
-
-                if (!notaParcial || !notaFinal || !pesoParcial || !pesoFinal || pesoParcial + pesoFinal !== 100) {
-                    alert(`Por favor, ingrese datos válidos para la Unidad Didáctica ${i}.`);
+                if (!numUnidades || numUnidades <= 0) {
+                    alert('Por favor, ingrese un número válido de unidades.');
                     return;
                 }
 
-                totalNotas += (notaParcial * (pesoParcial / 100)) + (notaFinal * (pesoFinal / 100));
-                totalPeso += pesoParcial + pesoFinal;
-            }
+                const resultadoContainer = document.getElementById('resultado');
+                resultadoContainer.innerHTML = '';
 
-            if (totalPeso !== 100) {
-                alert('La suma de pesos debe ser igual a 100%.');
-                return;
-            }
+                const table = document.createElement('table');
+                const headerRow = table.insertRow();
+                const headers = ['Unidad', 'Examen Parcial', 'Examen Final'];
 
-            const nombreEstudiante = document.getElementById('nombreEstudiante').value;
-            const nombreAsignatura = document.getElementById('nombreAsignatura').value;
-            const notaFinal = totalNotas.toFixed(2);
+                for (let i = 1; i <= numUnidades; i++) {
+                    headers.push(`Unidad ${i}`);
+                }
 
-            document.getElementById('nombreEstudianteResultado').textContent = nombreEstudiante;
-            document.getElementById('nombreAsignaturaResultado').textContent = nombreAsignatura;
-            document.getElementById('notaFinal').textContent = notaFinal;
-            document.getElementById('resultado').style.display = 'block';
-        });
-    </script>
+                headers.push('Nota Media');
+
+                headers.forEach(headerText => {
+                    const th = document.createElement('th');
+                    th.textContent = headerText;
+                    headerRow.appendChild(th);
+                });
+
+                for (let i = 1; i <= 2; i++) {
+                    const row = table.insertRow();
+                    const unidadNum = i;
+
+                    const values = [`Examen ${i}`];
+
+                    for (let j = 1; j <= numUnidades; j++) {
+                        const inputId = `unidad${j}Examen${i}`;
+                        const inputValue = `<input type="number" id="${inputId}" step="0.01" required>`;
+                        values.push(inputValue);
+                    }
+
+                    values.push(''); // Espacio para la Nota Media
+
+                    values.forEach(value => {
+                        const td = row.insertCell();
+                        td.innerHTML = value;
+                    });
+                }
+
+                resultadoContainer.appendChild(table);
+                document.getElementById('calcularMedias').style.display = 'block';
+            });
+
+            document.getElementById('calcularMedias').addEventListener('click', function() {
+                const resultadoContainer = document.getElementById('resultado');
+                const table = resultadoContainer.querySelector('table');
+                const numRows = table.rows.length;
+
+                for (let i = 1; i <= numRows; i++) {
+                    const row = table.rows[i];
+                    const numUnidades = row.cells.length - 3; // Restar 3 por las columnas fijas
+
+                    let totalPuntos = 0;
+
+                    for (let j = 1; j <= numUnidades; j++) {
+                        const inputId = `unidad${j}Examen${i}`;
+                        const nota = parseFloat(document.getElementById(inputId).value);
+
+                        if (!nota || nota < 0 || nota > 10) {
+                            alert(`Por favor, ingrese datos válidos para la Unidad ${j}, Examen ${i}.`);
+                            return;
+                        }
+
+                        totalPuntos += nota;
+                    }
+
+                    const notaMedia = totalPuntos / numUnidades;
+                    row.cells[numUnidades + 1].textContent = notaMedia.toFixed(2);
+                }
+
+                resultadoContainer.style.display = 'block';
+            });
+        </script>
+    </div>
 </body>
 </html>
+

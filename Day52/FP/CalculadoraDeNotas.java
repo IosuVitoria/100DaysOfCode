@@ -6,32 +6,23 @@ public class CalculadoraDeNotas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("¡Bienvenido a la Calculadora de Notas!");
-
-        // Obtener la nota parcial y los puntos extra
         double notaParcial = obtenerNota("parcial", scanner);
         int puntosExtraParcial = obtenerPuntosExtra("parcial", scanner);
 
-        // Calcular la nota final del parcial
         double notaFinalParcial = calcularNotaFinal(notaParcial, puntosExtraParcial);
 
-        // Obtener la nota del examen final y los puntos extra
         double notaExamenFinal = obtenerNota("examen final", scanner);
         int puntosExtraExamenFinal = obtenerPuntosExtra("examen final", scanner);
 
-        // Calcular la nota final del examen final
         double notaFinalExamenFinal = calcularNotaFinal(notaExamenFinal, puntosExtraExamenFinal);
 
-        // Obtener la información de las Unidades Didácticas
         double totalUDs = obtenerNotasUDs(scanner);
 
-        // Calcular la nota final ponderada
         double notaFinalPonderada = calcularNotaFinalPonderada(notaFinalParcial, notaFinalExamenFinal, totalUDs);
 
-        // Calcular la nota final total
         double notaFinalTotal = calcularNotaFinalTotal(notaFinalPonderada);
 
-        // Mostrar la nota en la escala de 0 a 4 y un mensaje correspondiente
+ 
         mostrarNotaEnEscalaYMensaje(notaFinalTotal);
 
         scanner.close();
@@ -48,8 +39,8 @@ public class CalculadoraDeNotas {
     }
 
     public static double calcularNotaFinal(double nota, int puntosExtra) {
-        nota = Math.min(100, nota + puntosExtra); // Limitar la nota a 100
-        return (nota / 100) * 100; // Calcular la nota final
+        nota = Math.min(100, nota + puntosExtra); 
+        return (nota / 100) * 100; 
     }
 
     public static double obtenerNotasUDs(Scanner scanner) {
