@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pathway Gothic One";
+    font-size: 18px;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el logo en el nav */
+.logo-container {
+    flex-shrink: 0;
+}
+
+.logo-container img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilos para la barra de navegación */
+nav ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul.menu li {
+    margin-left: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
