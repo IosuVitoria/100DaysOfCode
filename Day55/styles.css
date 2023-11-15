@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+body {
+    font-family: "Raleway", 'Arial', sans-serif;
+    background: url("./fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 12px 12px 24px #cbced1, -12px -12px 24px #ffffff;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px #cbced1, -8px -8px 16px #ffffff;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    color: #444;
+    box-shadow: 12px 12px 24px #cbced1, -12px -12px 24px #ffffff;
+}
+
+input {
+    padding: 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+#feedback {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#score {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 12px 12px 24px #cbced1, -12px -12px 24px #ffffff;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 12px 12px 24px #cbced1, -12px -12px 24px #ffffff;
+    position: relative; 
+}
+
+.progress-bar {
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    background-color: #4caf50;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: width 1s; 
+}

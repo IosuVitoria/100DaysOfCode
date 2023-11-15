@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>Juego de Operaciones Matemáticas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JUEGO PARA LAGRANEJOS</h1>
+        <div class="card">
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Tu respuesta">
+            <button onclick="verificarRespuesta()">Responder</button>
+            <p id="feedback"></p>
+            <p id="score">Aciertos: 0</p>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2>¡Juego terminado!</h2>
+            <p id="modalScore"></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
