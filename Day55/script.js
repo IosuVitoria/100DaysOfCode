@@ -1,13 +1,18 @@
 let aciertos = 0;
 let numDigitos = 1;
 let preguntaActual = {};
-let tiempoRestante = 60; 
+let tiempoRestante = 60;
 let temporizador;
 
 function generarOperacion(numDigitos) {
     const operandos = Array.from({ length: 2 }, () => Math.floor(Math.random() * Math.pow(10, numDigitos)));
     const operadores = ['+', '-', '*', '/'];
-    const operador = operadores[Math.floor(Math.random() * operadores.length)];
+    let operador;
+
+    do {
+        operador = operadores[Math.floor(Math.random() * operadores.length)];
+    } while (operador === '/' && operandos[1] === 0);
+
     const operacion = `${operandos[0]} ${operador} ${operandos[1]}`;
     const resultado = eval(operacion);
     return { operacion, resultado };
@@ -25,7 +30,7 @@ function verificarRespuesta() {
         if (respuestaUsuario === preguntaActual.resultado) {
             document.getElementById('feedback').innerText = '¡Correcto!';
             aciertos++;
-            tiempoRestante += 3; 
+            tiempoRestante += 8;
         } else {
             document.getElementById('feedback').innerText = `Incorrecto. La respuesta correcta era ${preguntaActual.resultado}.`;
         }
