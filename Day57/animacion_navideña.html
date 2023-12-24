@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #1a1a2e;
+            color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .snowflakes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .snowflake {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #f9f9f9;
+            border-radius: 50%;
+            animation: snowfall linear infinite;
+            opacity: 0.7;
+            box-shadow: 0 0 10px 5px #f9f9f9, 0 0 20px 10px #f9f9f9;
+        }
+
+        .scene {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            z-index: 2;
+        }
+
+        .neumorphic-box {
+            width: 300px;
+            height: 450px;
+            background: #1a1a2e;
+            box-shadow: 20px 20px 50px #0d0d17, -20px -20px 50px #27273f;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .neumorphic-text {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #0d0d17;
+
+        }
+
+        .arbol_navidad{
+            width: 90%;
+            border-radius: 25px;
+            margin: 0 auto;
+            display: flex;
+            box-shadow: 5px 5px 15px #4d4d57, -5px -5px 15px #d9d9e2;
+
+            filter: grayscale(100%);
+        }
+
+        .olentzero{
+            position: fixed;
+            z-index: 1000;
+            bottom: 20px;
+            left: 20px;
+            width: 300px;
+            height: auto;
+            opacity: 0.7;
+        }
+
+        .gasteiz{
+            border: 5px solid black;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            filter: grayscale();
+            opacity: 0.7;
+            width: 300px;
+            height: auto;
+        }
+
+        .bilbao{
+            border: 5px solid black;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            filter: grayscale();
+            opacity: 0.7;
+            width: 300px;
+            height: auto;
+        }
+
+        .donosti{
+            border: 5px solid black;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            filter: grayscale();
+            opacity: 0.7;
+            width: 300px;
+            height: auto;
+        }
+
+        audio {
+            display: none;
+        }
+
+        @keyframes snowfall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+    <title>Felicitación navideña!</title>
+</head>
+<body>
+    <div class="snowflakes"></div>
+    <div class="scene">
+        <div class="neumorphic-box">
+            <div class="neumorphic-text">¡Feliz Navidad! - Gabon Zoriontsuak!</div>
+            <img src="./arbol.jpeg" alt="imagen arbol" class="arbol_navidad">
+        </div>
+        <audio controls id="audioPlayer">
+            <source src="mi-archivo-audio.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+    <img src="./olentzero.jpg" alt="oletzero" class="olentzero">
+    <img src="./gasteiz.jpg" alt="gasteiz" class="gasteiz">
+    <img src="./bilbao.jpg" alt="gasteiz" class="bilbao">
+    <img src="./donistu.jpg" alt="gasteiz" class="donosti">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            createSnowflakes();
+        });
+
+        function createSnowflakes() {
+            const snowflakesContainer = document.querySelector('.snowflakes');
+
+            for (let i = 0; i < 50; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                snowflakesContainer.appendChild(snowflake);
+            }
+        }
+
+   
+        document.addEventListener('DOMContentLoaded', function () {
+            var audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.play();
+        });
+  
+    </script>
+</body>
+</html>
