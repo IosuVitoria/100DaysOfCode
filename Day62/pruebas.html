@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    #store {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      box-shadow: 10px 10px 30px #b8b8b8, -10px -10px 30px #ffffff;
+      border-radius: 30px;
+    }
+
+    #products-container {
+      flex-grow: 1;
+      padding: 20px;
+      background-color: #f0f0f0;
+      box-shadow: inset 10px 10px 20px #b8b8b8, inset -10px -10px 20px #ffffff;
+      border-radius: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .product {
+      width: 200px;
+      margin: 10px;
+      border: 2px solid #bdc3c7;
+      border-radius: 15px;
+      cursor: grab;
+      background-color: #f0f0f0;
+      color: #333;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 5px 5px 10px #b8b8b8, -5px -5px 10px #ffffff;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .product h2, .product p {
+      margin: 10px 0;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 8px 8px 15px #b8b8b8, -8px -8px 15px #ffffff;
+    }
+
+    #cart {
+      width: 100%;
+      padding: 20px;
+      border: 4px dashed #3498db;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 10px 10px 30px #b8b8b8, -10px -10px 30px #ffffff;
+      margin-top: 20px;
+    }
+
+    #cart.drag-over {
+      background-color: #2980b9;
+    }
+
+    .product-in-cart {
+      position: relative;
+      padding: 15px;
+      margin: 10px;
+      border: 2px solid #2980b9;
+      border-radius: 15px;
+      background-color: #2980b9;
+      color: #fff;
+      cursor: grab;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .product-in-cart .product-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .product-in-cart:hover {
+      transform: scale(1.05);
+      box-shadow: 5px 5px 10px #b8b8b8, -5px -5px 10px #ffffff;
+    }
+
+    .product-in-cart .remove-btn, .count-btn {
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+
+    #total {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #fff;
+    }
+  </style>
+  <title>Drag and Drop Store</title>
+</head>
+<body>
+  <div id="store">
+    <div id="products-container">
+      <div class="product" draggable="true" data-price="145">
+        <img src="./articulo1.jpg" alt="zapatilla1">
+        <h2>Product 1</h2>
+        <p>145,00€</p>
+      </div>
+      <div class="product" draggable="true" data-price="125">
+        <img src="./articulo2.jpg" alt="zapatilla1">
+        <h2>Product 2</h2>
+        <p>125,00€</p>
+      </div>
+      <div class="product" draggable="true" data-price="115">
+        <img src="./articulo3.jpg" alt="zapatilla1">
+        <h2>Product 3</h2>
+        <p>115,00€</p>
+      </div>
+    </div>
+    <div id="cart" class="drop-zone">
+      <i class="fas fa-shopping-cart fa-3x" style="margin-bottom: 10px;"></i>
+      <div id="cart-products-container"></div>
+      <div id="total">Total: <span id="total-amount">0.00€</span></div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const products = document.querySelectorAll('.product');
+      const cart = document.getElementById('cart');
+      const cartProductsContainer = document.getElementById('cart-products-container');
+      const totalAmountElement = document.getElementById('total-amount');
+      let totalAmount = 0;
+
+      function handleProductDrag(product) {
+        product.addEventListener('dragstart', (event) => {
+          event.dataTransfer.setData('text/plain', product.textContent);
+          event.dataTransfer.setData('price', product.getAttribute('data-price'));
+          product.style.opacity = '0.5';
+          product.classList.add('dragging');
+        });
+
+        product.addEventListener('dragend', () => {
+          product.style.opacity = '1';
+          product.classList.remove('dragging');
+        });
+      }
+
+      function handleCartDragEvents() {
+        cart.addEventListener('dragover', (event) => {
+          event.preventDefault();
+          cart.classList.add('drag-over');
+        });
+
+        cart.addEventListener('dragleave', () => {
+          cart.classList.remove('drag-over');
+        });
+
+        cart.addEventListener('drop', (event) => {
+          event.preventDefault();
+          cart.classList.remove('drag-over');
+          const data = event.dataTransfer.getData('text/plain');
+          const price = parseFloat(event.dataTransfer.getData('price'));
+          const productInCart = document.createElement('div');
+          productInCart.textContent = data;
+          productInCart.classList.add('product-in-cart');
+
+          const count = document.createElement('span');
+          count.classList.add('count');
+          count.textContent = '1';
+
+          const productActions = document.createElement('div');
+          productActions.classList.add('product-actions');
+
+          const removeBtn = document.createElement('span');
+          removeBtn.innerHTML = '<i class="fas fa-minus count-btn"></i>';
+          removeBtn.classList.add('remove-btn');
+          removeBtn.addEventListener('click', () => {
+            const productCount = parseInt(count.textContent);
+            if (productCount > 1) {
+              count.textContent = (productCount - 1).toString();
+              updateTotal(-price);
+            } else {
+              productInCart.remove();
+              updateTotal(-price);
+            }
+          });
+
+          const addBtn = document.createElement('span');
+          addBtn.innerHTML = '<i class="fas fa-plus count-btn"></i>';
+          addBtn.classList.add('count-btn');
+          addBtn.addEventListener('click', () => {
+            count.textContent = (parseInt(count.textContent) + 1).toString();
+            updateTotal(price);
+          });
+
+          productActions.appendChild(removeBtn);
+          productActions.appendChild(addBtn);
+
+          productInCart.appendChild(count);
+          productInCart.appendChild(productActions);
+
+          handleProductDrag(productInCart);
+
+          cartProductsContainer.appendChild(productInCart);
+          updateTotal(price);
+        });
+      }
+
+      handleCartDragEvents();
+
+      function updateTotal(amount) {
+        totalAmount += amount;
+        totalAmountElement.textContent = totalAmount.toFixed(2) + '€';
+      }
+
+      products.forEach((product) => {
+        handleProductDrag(product);
+      });
+    });
+  </script>
+</body>
+</html>
