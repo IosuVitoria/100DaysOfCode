@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Recipe page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="recipe">
+    <header class="recipe__header">
+      <img class="recipe__header__image" src="./assets/images/image-omelette.jpeg" alt="omelette">
+      <div class="recipe__header__text">
+        <h2>Simple Omelette Recipe</h2>
+        <p> An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      </div>
+    </header>
+    <section class="recipe__text">
+      <article class="recipe__preparation">
+        <header class="recipe__preparation__header">
+          <h5>Preparation time</h5>
+        </header>
+        <ul class="recipe__preparation__text">
+          <li><b style="color: hsl(30, 10%, 34%); margin-left: 10px;">Total: </b>Approximately 10 minutes</li>
+          <li><b style="color: hsl(30, 10%, 34%); margin-left: 10px;">Preparation:</b> 5 minutes</li>
+          <li><b style="color: hsl(30, 10%, 34%); margin-left: 10px;">Cooking:</b> 5 minutes</li>
+
+        </ul>
+      </article>
+      <article class="recipe__ingredients">
+        <header class="recipe__ingredients__header">
+          <h5>Ingredients</h5>
+        </header>
+        <ul class="recipe__ingredients__text">
+          <li><span style="margin-left: 10px;">2-3 large eggs</span></li>
+          <li><span style="margin-left: 10px;">Salt, to taste</span></li>
+          <li><span style="margin-left: 10px;">Pepper, to taste</span></li>
+          <li><span style="margin-left: 10px;">1 tablespoon of butter or oil</span></li>
+          <li><span style="margin-left: 10px;">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
+        </ul>
+      </article>
+      <article style="border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;" class="recipe__instructions">
+        <header class="recipe__instructions__header">
+          <h5>Instructions</h5>
+        </header>
+          <ol class="recipe__instructions__text">
+            <div style="display: flex;">
+              <li style="padding-left: 15px;"><b style="font-weight: bolder; " >Beat the eggs: </b>In a bowl, beat the eggs with a pinch of salt and pepper 
+              until they are well mixed.You can add a tablespoon of water or milk for a fluffier texture.</li>
+            </div>
+            <div style="display: flex;">
+              <li style="padding-left: 15px;"><b style="font-weight: bolder;">Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            </div>
+            <div style="display: flex;">
+              <li style="padding-left: 15px;"><b style="font-weight: bolder; ">Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+                the eggs evenly coat the surface.</li>
+            </div>
+            <div style="display: flex;">
+              <li style="padding-left: 15px;"><b style="font-weight: bolder;">Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+                middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            </div>
+            <div style="display: flex;">
+              <li style="padding-left: 15px;"><b style="font-weight: bolder; ">Fold and serve:</b>As the omelette continues to cook, carefully lift one edge and fold it over the 
+                fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            </div>
+            <div style="display: flex;">
+              <li style="padding-left: 15px"><b style="font-weight: bolder;">Enjoy:</b>Serve hot, with additional salt and pepper if needed.</li>
+            </div>
+          </ol>
+      </article>
+
+      <article class="recipe__nutrition">
+        <header class="recipe__nutrition__header">
+          <h5>Nutrition</h5>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        </header>
+        <table class="recipe__nutrition__table">
+          <tr class="table__line">
+              <td   class="table__left">Calories</td>
+              <td class="table__right">277kcal</td>
+          </tr>
+          <tr class="table__line">
+              <td class="table__left">Carbs</td>
+              <td class="table__right">0g</td>
+          </tr>
+          <tr class="table__line">
+              <td class="table__left">Protein</td>
+              <td class="table__right">20g</td>
+          </tr>
+          <tr>
+              <td class="table__left">Fat</td>
+              <td class="table__right">22g</td>
+          </tr>
+      </table>
+      </article>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Iosu Gómez Valdecantos</a>.
+  </div>
+</body>
+</html>

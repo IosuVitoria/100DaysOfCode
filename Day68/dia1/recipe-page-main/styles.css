@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+   /* Neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+body{
+    background-color: var(--eggshell);  
+    font-family: "Outfit", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+
+.recipe__header{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.recipe__header__image{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.recipe__header__text{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.recipe__header__text h2{
+    margin-top: 10px;
+    color: #312D2C;
+    font-size: 36px;
+    font-family: "YoungSerif" !important;
+}
+
+.recipe__header__text p{
+    color: var(--wengeBrown);
+    margin-bottom: 20px;
+}
+
+
+.recipe__preparation{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF7FC;
+    padding: 20px;
+    margin-top: 15px;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.recipe__preparation__header{
+    color: var(--darkRaspberry);
+    font-size: 24px;
+}
+
+.recipe__preparation__text{
+    margin-left: 25px;
+}
+
+.recipe__preparation__text li{
+    margin-bottom: 10px;
+    color: var(--wengeBrown);
+}
+
+.recipe__ingredients{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 15px;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.recipe__ingredients__header h5,
+.recipe__instructions__header h5,
+.recipe__nutrition__header h5{
+
+    margin-top: 10px;
+    color: var(--nutmeg);
+    font-size: 28px;
+    font-family: "YoungSerif" !important;
+    font-weight: 300;
+}
+
+
+.recipe__ingredients__text{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--wengeBrown);
+}
+
+.recipe__ingredients__text li{
+    margin-left: 20px;
+}
+
+
+.recipe_instructions{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.recipe__instructions__text{
+    display: flex;
+    flex-direction: column;
+    color: #312D2C;
+    padding: 20px;
+    margin-bottom: 15px;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.recipe__instructions__text li{
+    list-style: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.recipe__instructions__text {
+    counter-reset: instructionCounter;
+}
+
+.recipe__instructions__text li::before {
+    content: counter(instructionCounter)"."; 
+    counter-increment: instructionCounter; 
+    color: var(--nutmeg); 
+    font-weight: bold; 
+    display: inline-block;
+    width: 2em; 
+    margin-left: -2em;
+}
+
+
+/* Estilos dedicados a la parte de nutrición.  */
+.recipe__nutrition__header p{
+    color: var(--wengeBrown);
+    margin: 15px 0px
+}
+
+.recipe__nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+.recipe__nutrition__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__line {
+    border-bottom: 1px solid #ddd; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.table__left {
+    text-align: left;
+    padding: 15px 0px;
+    color: var(--wengeBrown);
+    padding-left: 40px;
+    width: 50%;
+}
+
+.table__right {
+    text-align: left;
+    font-weight: bolder;
+    padding: 15px 0px;
+    width: 60%;
+    color: var(--nutmeg);
+}
+
+
+@media screen and (max-width: 450px) {
+    main{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .recipe__header__image{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        padding: 0px !important;
+        height: auto;
+        border-radius: 0px;
+     
+    }
+
+    .recipe__header__text h2{
+        margin-top: 150px;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .recipe__header__text p{
+        font-size: 15px !important;
+        margin-bottom: 10px;
+    }
+
+    .table__left {
+        padding-left: 10px;
+    }
+}
+    
+    
