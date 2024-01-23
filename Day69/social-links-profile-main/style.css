@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'InterBold';
+    src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InterSemi';
+    src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InterVari';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### colores primarios */
+    --green: hsl(75, 94%, 57%);
+    /* ### colores neutrales */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%);
+}
+
+
+body{
+    background-color: var(--offBlack);
+}
+
+
+.main__body {
+    background-color: var(--darkGrey);
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.main__body__header{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+img{
+    margin: auto;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.main__body__header__data{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.main__body__header__data h3{
+    font-size: 24px;
+    font-family: "InterBold", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: auto;
+}
+
+.main__body__header__data h4{
+    font-size: 16px;
+    font-family: "InterBold", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--green);
+    margin: auto;
+}
+
+.main__body__header h5{
+    font-size: 14px;
+    font-family: "InterBold", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main__social__media__element{
+    font-size: 14px;
+    font-family: "InterBold", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+    margin: auto;
+    background-color: var(--grey);
+    width: 280px;
+    padding: 11px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.atribution{
+   display: flex;
+   position: absolute;
+   background-color: var(--green);
+}
+
+
+@media screen and (max-width: 450px) {
+    .main__body{
+        width: 90%;
+        margin-top: 0px;
+    }
+
+   a{
+    display: none;
+   }
+}
+    
+    
