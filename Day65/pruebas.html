@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./UVAS2.jpg" type="image/x-icon">
+  <title>¡Feliz Año Nuevo!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+
+    #container {
+      text-align: center;
+      color: #fff;
+    }
+
+    #counter {
+      font-size: 5em;
+      margin-bottom: 20px;
+      padding: 30px;
+      background: #3f4c6b;
+      border-radius: 25px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px rgba(255, 255, 255, 0.05);
+      display: inline-block;
+      animation: pulse 1s infinite alternate;
+    }
+
+    #clickButton {
+      padding: 20px 40px;
+      font-size: 1.5em;
+      margin-left: 15px;
+      cursor: pointer;
+      background: #00b09b;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      outline: none;
+      transition: background 0.3s;
+    }
+
+    #clickButton:hover {
+      background: #00816a;
+    }
+
+    #happyNewYear {
+      font-size: 5em;
+      margin-top: 20px;
+      padding: 30px;
+      background: #00b09b;
+      color: #fff;
+      border-radius: 25px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px rgba(255, 255, 255, 0.05);
+      display: none;
+      animation: fadeIn 1s forwards;
+    }
+
+    #fireworksImage {
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 15px;
+      display: none;
+    }
+
+    .uvas{
+        position: fixed;
+        width: 20%;
+        top: 15px;
+        left: 15px;
+        border-radius: 50%;
+    }
+
+    @keyframes pulse {
+      to {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+    <img src="./uvas.jpg" alt="imagen uvas" class="uvas">
+    <div id="container">
+        <h1 style="color: #00b09b;">¡Feliz Año Nuevo!</h1>
+        <p>Haz clic en el botón para ensayar las uvas conmigo. NO TE ATRAGANTES!</p>
+        <p id="counter">0</p>
+        <button id="clickButton">ENSAYO</button>
+        <p id="happyNewYear">¡Feliz Año Nuevo!</p>
+        <img id="fireworksImage" src="./fuegos.gif" alt="fuegos artificiales">
+        <p>¡ATENTX A LA CELEBRACIÓN!</p>
+    </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const counterElement = document.getElementById('counter');
+      const clickButton = document.getElementById('clickButton');
+      const happyNewYearElement = document.getElementById('happyNewYear');
+      const fireworksImage = document.getElementById('fireworksImage');
+      let clickCount = 0;
+      let timer;
+
+      clickButton.addEventListener('click', function () {
+        if (clickCount === 0) {
+          timer = setInterval(function () {
+            clickCount++;
+            counterElement.textContent = clickCount;
+
+            if (clickCount >= 12) {
+              clearInterval(timer);
+              showHappyNewYear();
+            }
+          }, 1000);
+        }
+      });
+
+      function showHappyNewYear() {
+        clickButton.style.display = 'none';
+        counterElement.style.display = 'none';
+        happyNewYearElement.style.display = 'block';
+        fireworksImage.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
