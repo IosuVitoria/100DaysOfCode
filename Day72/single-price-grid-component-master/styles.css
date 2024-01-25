@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--lightGray);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  height: auto;
+}
+
+.container-one {
+  padding: 30px;
+  text-align: left;
+}
+
+.container-one h1 {
+  color: var(--cyan);
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.container-one h3 {
+  font-size: 16px;
+  color: var(--brightYellow);
+  margin-bottom: 10px;
+}
+
+.container-one p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--grayishBlue);
+}
+
+.main-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-two,
+.container-three {
+  padding: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.container-two{
+  background-color: #3eb7b7;
+}
+
+.container-three{
+  background-color:   #5ac9cc   ;
+}
+
+.container-two h4 {
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#amount {
+  margin-top: -10px; 
+  color: #90dbdc;
+  display: flex;
+  align-items: center;
+}
+
+#amount span {
+  font-size: 29px;
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+
+.container-two__acces{
+  margin-top: -13px;
+  margin-bottom: 28px;
+  color: white;
+}
+
+.container-two p{
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container-three h3 {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.container-three p {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 0.8;
+  color:   #e4ecf4 ;
+  margin-left: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--brightYellow);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 11px;
+  color: #777;
+}
+
+.attribution a {
+  color: var(--cyan);
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+
+  .main-container-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    width: 95%;
+    height: auto;
+    margin: 40px 0;
+  }
+}
