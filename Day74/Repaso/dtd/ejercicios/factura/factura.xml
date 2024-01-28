@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE factura SYSTEM "factura.dtd">
+<factura>
+    <cliente>
+        <nombre>Juan Pérez</nombre>
+        <direccion>Calle Principal, 123</direccion>
+    </cliente>
+    <productos>
+        <producto>
+            <nombre>Camiseta</nombre>
+            <precio>20.00</precio>
+            <cantidad>2</cantidad>
+        </producto>
+        <producto>
+            <nombre>Zapatos</nombre>
+            <precio>50.00</precio>
+            <cantidad>1</cantidad>
+        </producto>
+    </productos>
+    <total>90.00</total>
+</factura>

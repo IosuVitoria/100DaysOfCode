@@ -1,0 +1,11 @@
+<!ELEMENT recetas (receta+)>
+<!ELEMENT receta (tipo, nombre, calorias, ingredientes, pasos)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED>
+<!ELEMENT pasos (paso+)>
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST paso orden CDATA #REQUIRED>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE catalogo SYSTEM "archivo.dtd">
+<catalogo>
+    <producto id="1">
+        <nombre>Portátil UltraX</nombre>
+        <marca>SuperTech</marca>
+        <descripcion><![CDATA[
+            La serie UltraX de SuperTech es conocida por su rendimiento excepcional y diseño ultradelgado.
+            ¡Experimenta la potencia en tus manos con este portátil de última generación!
+        ]]></descripcion>
+        <precio moneda="USD">1499.99</precio>
+        <comentarios>
+            <comentario>
+                <usuario>Usuario1</usuario>
+                <texto><![CDATA[
+                    Este portátil es increíble, supera todas mis expectativas.
+                    No puedo creer lo delgado que es y lo rápido que funciona.
+                ]]></texto>
+            </comentario>
+            <comentario>
+                <usuario>Usuario2</usuario>
+                <texto><![CDATA[
+                    Excelente relación calidad-precio. Ideal para tareas intensivas y gaming.
+                ]]></texto>
+            </comentario>
+        </comentarios>
+    </producto>
+
+</catalogo>

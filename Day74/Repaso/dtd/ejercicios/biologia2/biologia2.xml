@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE biologia SYSTEM "biologia2.dtd">
+<biologia>
+    <tema id="T001" nivel="Avanzado">
+        <nombre>Genética Mendeliana</nombre>
+        <descripcion>Principios básicos de la herencia según las leyes de Mendel.</descripcion>
+        <conceptos>
+            <concepto tipo="fundamental">
+                <termino>Gen</termino>
+                <definicion>Unidad hereditaria que codifica una característica específica.</definicion>
+                <ejemplos>
+                    <ejemplo origen="experimento">Todos los organismos tienen genes.</ejemplo>
+                </ejemplos>
+            </concepto>
+            <concepto tipo="complejo">
+                <termino>Fenotipo</termino>
+                <definicion>Conjunto de características observables de un organismo.</definicion>
+                <ejemplos>
+                    <ejemplo origen="observacion">Color de ojos, altura, forma del rostro, etc.</ejemplo>
+                    <ejemplo origen="investigacion">El fenotipo puede estar influenciado por múltiples genes.</ejemplo>
+                </ejemplos>
+            </concepto>
+        </conceptos>
+    </tema>
+    <tema id="T002" nivel="Intermedio">
+        <nombre>Evolución</nombre>
+        <descripcion>Teoría de la evolución y sus mecanismos subyacentes.</descripcion>
+        <conceptos>
+            <concepto tipo="fundamental">
+                <termino>Selección Natural</termino>
+                <definicion>Mecanismo por el cual ciertos rasgos beneficiosos se transmiten con mayor frecuencia a las generaciones futuras.</definicion>
+                <ejemplos>
+                    <ejemplo origen="estudio">Resistencia a antibióticos en bacterias debido a la selección natural.</ejemplo>
+                    <ejemplo origen="observacion">Camuflaje en animales como resultado de la selección natural.</ejemplo>
+                </ejemplos>
+            </concepto>
+            <concepto tipo="complejo">
+                <termino>Especiación</termino>
+                <definicion>Proceso mediante el cual una población se divide y da lugar a dos o más especies diferentes.</definicion>
+                <ejemplos>
+                    <ejemplo origen="experimento">Especiación alopátrica.</ejemplo>
+                    <ejemplo origen="investigacion">Especiación simpátrica.</ejemplo>
+                </ejemplos>
+            </concepto>
+        </conceptos>
+    </tema>
+</biologia>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE recetas SYSTEM "recetas_completo.dtd">
+
+<recetas>
+	<receta tipo="postre" fecha="2020-10-01">
+		<nombre>tartadechocolate</nombre>
+		<calorias>600</calorias>
+		<ingredientes>
+			<ingrediente cantidad="250gramos">Colacao</ingrediente>
+			<ingrediente cantidad="200 gramos">Mantequilla</ingrediente>
+			<ingrediente cantidad="1 vaso">Harina</ingrediente>
+			<ingrediente cantidad="1 vaso">Azucar</ingrediente>
+			<ingrediente cantidad="3">Huevos</ingrediente>
+		</ingredientes>
+		<pasos>
+			<paso orden="1">Mezclar cola-cao con mantequilla</paso>
+			<paso orden="2">Separar las yemas y mezclar con el azucar.</paso>
+			<paso orden="3">Unir ambas mezclas con la harina</paso>
+			<paso orden="4">Montar claras y añadir ala mezcla.</paso>
+			<paso orden="5">Untar un molde con manteuilla y espolvorear harina.</paso>
+			<paso orden="6">Hornear a 175º 40 minutos</paso>
+		</pasos>
+	</receta>
+	<receta>
+		<nombre>bizcocho</nombre>
+		<calorias>400</calorias>
+		<ingredientes>
+			<ingrediente cantidad="1 ud">Yogur</ingrediente>
+			<ingrediente cantidad="1 ud yogur">Mantequilla</ingrediente>
+			<ingrediente cantidad="2 ud yogur">Harina</ingrediente>
+			<ingrediente cantidad="3 ud yogur">Azucar</ingrediente>
+			<ingrediente cantidad="3">Huevos</ingrediente>
+			<ingrediente cantidad="20 gramos">Mantequilla</ingrediente>
+			<ingrediente cantidad="1 sobre">Levadura</ingrediente>
+		</ingredientes>
+		<pasos>
+			<paso orden="1">Echamos el yogur en un bol y utilizamos el vasito como medida</paso>
+			<paso orden="2">Batir los huevos con el azúcar, y luego añadir la levadura con la harina tamizada y el aceite</paso>
+			<paso orden="3">volcamos sobre un molde desmontable, al que habremos untado de mantequilla y espolvoreado con harina </paso>
+			<paso orden="4">Horneamos durante 30-35 minutos a 180ºC</paso>
+		</pasos>
+	</receta>
+</recetas>

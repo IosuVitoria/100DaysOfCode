@@ -1,0 +1,61 @@
+{
+  "modulos": {
+    "modulo": [
+      {
+        "$": {
+          "id": "LMSGI"
+        },
+        "nombre": [
+          "Lenguaje de marcas y sistemas de gestión de la informaición"
+        ],
+        "profesores": [
+          {
+            "profesor": [
+              {
+                "nombreprofesor": [
+                  "Nora San Saturnino"
+                ],
+                "idprofesor": [
+                  "0001"
+                ]
+              },
+              {
+                "nombreprofesor": [
+                  "Itziar Gortazar"
+                ],
+                "idprofesor": [
+                  "0002"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "id": "BBDD"
+        },
+        "nombre": [
+          "Bases de Datos"
+        ],
+        "profesores": [
+          {
+            "profesor": [
+              {
+                "$": {
+                  "horas": "180"
+                },
+                "nombreprofesor": [
+                  "Beñat Madina"
+                ],
+                "idprofesor": [
+                  "0003"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+<!-- Definimos la estructura del documento XML "recetas.xml" -->
+<!ELEMENT recetas (receta+)>
+
+<!-- Definimos el elemento "receta" -->
+<!ELEMENT receta (nombre, calorias?, ingredientes, pasos)>
+<!ATTLIST receta tipo (entrante | primero | segundo | postre) #IMPLIED>
+
+<!-- Definimos los tipos de datos de cada elemento dentro de "receta" -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT pasos (paso*)>
+
+<!-- Definimos el elemento "ingrediente" -->
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED>
+
+<!-- Definimos el elemento "paso" -->
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST paso orden CDATA #REQUIRED> 	

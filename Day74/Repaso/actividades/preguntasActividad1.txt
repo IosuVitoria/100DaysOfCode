@@ -1,0 +1,42 @@
+Pregunta 1:
+
+A partir del formato RSS 0.90 se desarrollaron los formatos:
+Seleccione una o más de una: RSS 1.0. , RSS 0.92. y RSS 2.0.
+
+Pregunta 2: 
+
+Asocia cada elemento del fichero rss con su función correspondiente.
+
+- Definición de la codificación: Determina el código de la información contenida en el fichero.
+- Declaración de RSS: Determina la versión RSS utilizada.
+- Ítem: Cada uno de los servicios que se ofrecen.
+- Declaración de documento XML: Determina la versión XML utilizada.
+- Canal: Determina el sitio web asociado a la fuente.
+
+Pregunta 3:
+
+La declaración <!doctype html> define: Un documento en HTML5.
+
+Pregunta  4:
+
+La declaración <!doctype html> define: Un documento en HTML5.
+
+Pregunta 5: 
+
+Los formatos de salida de las transformaciones que permiten la sindicación son…
+
+Seleccione una o más de una: RSS , HTML y XHTML.
+
+Pregunta 8:
+
+Los agregadores de contenidos sirven para… Leer canales de contenidos.
+
+Pregunta 9:
+
+Los elementos de un documento XML están organizados según una estructura jerárquica.
+
+Pregunta 10.
+
+El prólogo  de un documento define información sobre el mismo y lo necesario para su interpretación.
+
+

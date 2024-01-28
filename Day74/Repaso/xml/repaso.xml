@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE modulos >
+
+<modulos>
+    <modulo>
+        <id>LMSGI</id>
+        <nombre>Lenguaje de marcas y sistemas de gestión de la información</nombre>
+        <profesores>
+            <profesor>
+                <nombreprofesor>Nora San Saturnino</nombreprofesor>
+                <idprofesor>0001</idprofesor>
+            </profesor>
+            <profesor>
+                <nombreprofesor>Itziar Gortazar</nombreprofesor>
+                <idprofesor>0002</idprofesor>
+            </profesor>
+        </profesores>
+    </modulo>
+    <modulo>
+        <id>BD</id>
+        <nombre>Bases de datos</nombre>
+        <profesores>
+            <profesor>
+                <horas>180</horas>
+                <nombreprofesor>Itziar Gortazar</nombreprofesor>
+                <idprofesor>0003</idprofesor>
+            </profesor>
+        </profesores>
+    </modulo>
+</modulos>

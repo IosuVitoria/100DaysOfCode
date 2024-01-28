@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE pedidos SYSTEM "pedidos.dtd">
+<pedidos>
+    <cliente>
+        <nombreCliente>Juan Pérez</nombreCliente>
+        <direccion>Calle Principal, 123</direccion>
+    </cliente>
+    <productos>
+        <producto>
+            <nombre>Smartphone</nombre>
+            <precio>300.00</precio>
+            <cantidad>1</cantidad>
+        </producto>
+        <producto>
+            <nombre>Portátil</nombre>
+            <precio>800.00</precio>
+            <cantidad>2</cantidad>
+        </producto>
+    </productos>
+    <descuentos>
+        <descuento tipo="cupon">DESCUENTO20</descuento>
+        <descuento tipo="envio">GRATIS</descuento>
+    </descuentos>
+    <total>1800.00</total>
+</pedidos>

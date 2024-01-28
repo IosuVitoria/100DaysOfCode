@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- La etiqueta xs también se puede sustituir por xsd. PERO SE TIENE QUE SUSTITUIR EN TODO EL DOCUMENTO. -->
+
+<!-- 
+    Definimos el elemento raíz del XML. En este caso será "recetas"
+    Con el atributo "type" decimos de qué tipo va ser ese elemento
+    Luego tendremos que definir qué estructura tiene ese tipo
+ -->
+    <xs:element name="recetas" type="TRecetas" />
+
+    <!-- 
+        Definimos el tipo de elemento TRecetas
+        "complexType" define el nuevo tipo y con "name" lo identificamos
+        "sequence" determina el orden de los elementos que componen el tipo
+        "element" define el elemento. Con maxOccurs="unbounded" le decimos que puede aparecer muchas veces
+    -->
+    <xs:complexType name="TRecetas">
+        <xs:sequence>
+           <xs:element name="receta" type="TReceta" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- 
+        Definimos el tipo de elemento TReceta
+        En este caso, los elementos son simples y se indica directamente el tipo de dato:
+        una cadena de caracteres y un número entero
+        Usamos "all" para indicar que los diferentes elementos se pueden introducir en cualquier orden
+     -->
+    <xs:complexType name="TReceta">
+        <xs:all>
+           <xs:element name="nombre" type="xs:string"/>
+           <xs:element name="calorias" type="xs:integer"/>
+        </xs:all>
+    </xs:complexType>
+
+</xs:schema>

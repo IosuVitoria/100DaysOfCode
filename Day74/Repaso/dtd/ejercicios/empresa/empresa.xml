@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE empresa SYSTEM "empresa.dtd">
+<empresa>
+    <nombreEmpresa>Empresa XYZ</nombreEmpresa>
+    <fundacion anio="2000" mes="10" dia="15"/>
+    <empleados>
+        <empleado id="1">
+            <nombre>Juan Pérez</nombre>
+            <puesto>
+                <titulo>Desarrollador Senior</titulo>
+                <departamento>Desarrollo</departamento>
+            </puesto>
+            <salario moneda="USD">75000.00</salario>
+            <proyectos>
+                <proyecto nombre="Sistema XYZ">
+                    <descripcion><![CDATA[
+                        Desarrollo de un sistema integral para gestionar procesos internos y mejorar la eficiencia.
+                    ]]></descripcion>
+                    <responsable>María Gómez</responsable>
+                    <fechas>
+                        <inicio anio="2022" mes="02" dia="01"/>
+                        <fin anio="2023" mes="06" dia="30"/>
+                    </fechas>
+                </proyecto>
+                <proyecto nombre="Sistema XYZ">
+                    <descripcion><![CDATA[
+                        Desarrollo de un sistema integral para gestionar procesos internos y mejorar la eficiencia.
+                    ]]></descripcion>
+                    <responsable>María Gómez</responsable>
+                    <fechas>
+                        <inicio anio="2022" mes="02" dia="01"/>
+                        <fin anio="2023" mes="06" dia="30"/>
+                    </fechas>
+                </proyecto>
+            </proyectos>
+        </empleado>
+    </empleados>
+</empresa>

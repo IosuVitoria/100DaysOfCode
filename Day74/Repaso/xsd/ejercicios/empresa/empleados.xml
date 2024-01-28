@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="empleados.xsd">
+    <empleado id="E001">
+        <nombre>John Doe</nombre>
+        <departamento>Desarrollo</departamento>
+        <proyectos>
+            <proyecto tipo="IT">
+                <nombre>Sistema de Gestión</nombre>
+                <estado>En Progreso</estado>
+            </proyecto>
+            <proyecto tipo="Marketing">
+                <nombre>Campaña Publicitaria</nombre>
+                <estado>Completado</estado>
+            </proyecto>
+        </proyectos>
+    </empleado>
+    <empleado id="E002">
+        <nombre>Jane Smith</nombre>
+        <departamento>Recursos Humanos</departamento>
+        <proyectos>
+            <proyecto tipo="Recruitment">
+                <nombre>Contratación de Personal</nombre>
+                <estado>Planificado</estado>
+            </proyecto>
+        </proyectos>
+    </empleado>
+</empresa>

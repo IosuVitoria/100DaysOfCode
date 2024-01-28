@@ -1,0 +1,17 @@
+XSD esquemas.
+
+XSD es otra tecnología para validar XML. Sus siglas significan XML Scheme Definition. Son ficheros xml.
+
+La primera línea de un fichero xsd es cómo la de un fichero xml.
+<?xml version "1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+Esta segunda línea viene a definir el conjunto de etiquetas se se pueden usar en el fichero xml.
+
+Entre las principales ventajas del XSD frente al DTD está en que permite controlar en más maneras el orden de las etiquetas. 
+
+Los XSD permiten definir además más tipos de dato.
+
+DEFINIR ELEMENTOS.
+

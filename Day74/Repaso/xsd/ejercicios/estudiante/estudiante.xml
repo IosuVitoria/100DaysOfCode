@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estudiante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="estudiante.xsd">
+    <nombre>Juan Pérez</nombre>
+    <edad>20</edad>
+    <curso>Informática</curso>
+    <notas>
+        <nota asignatura="Matemáticas">85</nota>
+        <nota asignatura="Programación">92</nota>
+        <nota asignatura="Inglés">78</nota>
+    </notas>
+</estudiante>

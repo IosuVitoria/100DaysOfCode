@@ -1,0 +1,49 @@
+<!ELEMENT empresa (nombreEmpresa, fundacion, empleados)>
+
+<!ELEMENT nombreEmpresa (#PCDATA)>
+<!ELEMENT fundacion EMPTY>
+<!ATTLIST fundacion
+    anio CDATA #REQUIRED
+    mes CDATA #REQUIRED
+    dia CDATA #REQUIRED
+>
+
+<!ELEMENT empleados (empleado+)>
+
+<!ELEMENT empleado (nombre, puesto, salario, proyectos?)>
+<!ATTLIST empleado
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT puesto (titulo, departamento)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT departamento (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!ATTLIST salario
+    moneda (USD | EUR | GBP) #REQUIRED
+>
+
+<!ELEMENT proyectos (proyecto+)>
+
+<!ELEMENT proyecto (descripcion, responsable, fechas)>
+<!ATTLIST proyecto
+    nombre CDATA #REQUIRED
+>
+
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT responsable (#PCDATA)>
+<!ELEMENT fechas (inicio, fin)>
+<!ELEMENT inicio EMPTY>
+<!ATTLIST inicio
+    anio CDATA #REQUIRED
+    mes CDATA #REQUIRED
+    dia CDATA #REQUIRED
+>
+
+<!ELEMENT fin EMPTY>
+<!ATTLIST fin
+    anio CDATA #REQUIRED
+    mes CDATA #REQUIRED
+    dia CDATA #REQUIRED
+>

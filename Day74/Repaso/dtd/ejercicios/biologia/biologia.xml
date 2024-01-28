@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE biologia SYSTEM "biologia.dtd">
+<biologia>
+    <tema>
+        <nombre>Genética Mendeliana</nombre>
+        <conceptos>
+            <concepto>
+                <termino>Gen</termino>
+                <definicion>Unidad hereditaria que codifica una característica específica.</definicion>
+                <ejemplos>
+                    <ejemplo>Gen para el color de ojos.</ejemplo>
+                    <ejemplo>Gen para la altura.</ejemplo>
+                </ejemplos>
+            </concepto>
+            <concepto>
+                <termino>Fenotipo</termino>
+                <definicion>Conjunto de características observables de un organismo.</definicion>
+                <ejemplos>
+                    <ejemplo>Color de ojos.</ejemplo>
+                    <ejemplo>Altura.</ejemplo>
+                </ejemplos>
+            </concepto>
+            <!-- Otros conceptos... -->
+        </conceptos>
+    </tema>
+    <tema>
+        <nombre>Evolución</nombre>
+        <conceptos>
+            <concepto>
+                <termino>Selección Natural</termino>
+                <definicion>Mecanismo por el cual ciertos rasgos beneficiosos se transmiten con mayor frecuencia a las generaciones futuras.</definicion>
+                <ejemplos>
+                    <ejemplo>Resistencia a antibióticos en bacterias.</ejemplo>
+                    <ejemplo>Camuflaje en animales.</ejemplo>
+                </ejemplos>
+            </concepto>
+            <concepto>
+                <termino>Especiación</termino>
+                <definicion>Proceso mediante el cual una población se divide y da lugar a dos o más especies diferentes.</definicion>
+                <ejemplos>
+                    <ejemplo>Especiación alopátrica.</ejemplo>
+                    <ejemplo>Especiación simpátrica.</ejemplo>
+                </ejemplos>
+            </concepto>
+            <!-- Otros conceptos... -->
+        </conceptos>
+    </tema>
+    <!-- Otros temas... -->
+</biologia>

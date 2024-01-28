@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<agenda>
+    <contacto id="1">
+        <nombre>
+            <titulo>Dr.</titulo>
+            <primerNombre>Juan</primerNombre>
+            <segundoNombre>Carlos</segundoNombre>
+            <apellido>Pérez</apellido>
+        </nombre>
+        <telefonos>
+            <telefono tipo="casa">123-456-7890</telefono>
+            <telefono tipo="trabajo">555-123-4567</telefono>
+        </telefonos>
+        <correos>
+            <correo tipo="personal" principal="true">juan@example.com</correo>
+            <correo tipo="trabajo" principal="false">juan.perez@trabajo.com</correo>
+        </correos>
+        <direccion>
+            <calle>Calle Principal</calle>
+            <numero>123</numero>
+            <ciudad>Ciudad A</ciudad>
+            <codigoPostal>12345</codigoPostal>
+        </direccion>
+        <notas>
+            <nota fecha="2022-01-15">Reunión de trabajo</nota>
+            <nota fecha="2022-02-10">Recordatorio de cumpleaños</nota>
+        </notas>
+    </contacto>
+</agenda>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empresa" type="tEmpresa" />
+
+    <xs:complexType name="tEmpresa">
+        <xs:sequence>
+            <xs:element name="empleado" type="tEmpleado" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tEmpleado">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="departamento" type="xs:string" />
+            <xs:element name="proyectos" type="tProyectos"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="tProyectos">
+        <xs:sequence>
+            <xs:element name="proyecto" type="tProyecto" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tProyecto">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="estado" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="tipo" type="tTipo" />
+    </xs:complexType>
+
+    <xs:simpleType name="tTipo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="IT"/>
+            <xs:enumeration value="Marketing"/>
+            <xs:enumeration value="Recruitment"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

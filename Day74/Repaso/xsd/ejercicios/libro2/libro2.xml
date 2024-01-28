@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="libro2.xsd">
+    <autor>
+        <nombre>J.K. Rowling</nombre>
+        <anioNacimiento>1965</anioNacimiento>
+        <libro>
+            <titulo>Harry Potter and the Philosopher's Stone</titulo>
+            <fechaPublicacion>1997</fechaPublicacion>
+        </libro>
+        <libro>
+            <titulo>Harry Potter and the Chamber of Secrets</titulo>
+            <fechaPublicacion>1998</fechaPublicacion>
+        </libro>
+    </autor>
+    <autor>
+        <nombre>George Orwell</nombre>
+        <anioNacimiento>1903</anioNacimiento>
+        <libro>
+            <titulo>1984</titulo>
+            <fechaPublicacion>1949</fechaPublicacion>
+        </libro>
+    </autor>
+</biblioteca>

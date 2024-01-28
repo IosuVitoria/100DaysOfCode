@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="estudiante" type="EstudianteType"/>
+
+  <xs:complexType name="EstudianteType">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="edad" type="xs:integer"/>
+      <xs:element name="curso" type="xs:string"/>
+      <xs:element name="notas" type="NotasType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NotasType">
+    <xs:sequence>
+      <xs:element name="nota" type="NotaType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NotaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:integer">
+        <xs:attribute name="asignatura" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+</xs:schema>

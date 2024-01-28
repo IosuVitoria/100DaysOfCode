@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE biblioteca SYSTEM "libros.dtd">
+<biblioteca>
+    <libro>
+        <titulo>Introducción a XML</titulo>
+        <autor>Juan Pérez</autor>
+        <publicacion>Año 2020</publicacion>
+    </libro>
+    <libro>
+        <titulo>Programación en Java</titulo>
+        <autor>Maria López</autor>
+        <publicacion>Año 2019</publicacion>
+    </libro>
+</biblioteca>

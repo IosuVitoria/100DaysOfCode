@@ -1,0 +1,26 @@
+<!ELEMENT agenda (contacto)>
+
+<!ELEMENT contacto (nombre, telefonos, correos, direccion, notas)>
+<!ATTLIST contacto id CDATA #REQUIRED>
+
+<!ELEMENT nombre (titulo, primerNombre, segundoNombre, apellido)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT primerNombre (#PCDATA)>
+<!ELEMENT segundoNombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT telefonos (telefono+)>
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono tipo (casa | trabajo) #REQUIRED>
+<!ELEMENT correos (correo+)>
+<!ELEMENT correo (#PCDATA)>
+<!ATTLIST correo tipo (personal | trabajo) #REQUIRED>
+<!ATTLIST correo principal (true | false) #REQUIRED>
+<!ELEMENT direccion (calle, numero, ciudad, codigoPostal)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT codigoPostal (#PCDATA)>
+<!ELEMENT notas (nota+)>
+<!ELEMENT nota (#PCDATA)>
+<!ATTLIST nota fecha CDATA #REQUIRED>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="recetas.xsd" >
+   
+ <receta>
+        <nombre>Tarta de chocolate</nombre>
+        <calorias>340</calorias>
+    </receta>
+    <receta>
+        <calorias>450</calorias>
+        <nombre>Arroz con leche</nombre>        
+    </receta>
+    <receta>
+        <calorias>450</calorias>
+        <nombre>Arroz con leche</nombre>        
+    </receta>
+
+</recetas>

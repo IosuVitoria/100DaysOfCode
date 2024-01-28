@@ -1,0 +1,39 @@
+<!ELEMENT laboratorio (nombrelabo, fundacion, investigadores)>
+<!ELEMENT nombrelabo (#PCDATA)>
+<!ELEMENT fundacion EMPTY>
+<!ATTLIST fundacion anio CDATA #REQUIRED>
+<!ATTLIST fundacion mes CDATA #REQUIRED>
+<!ATTLIST fundacion dia CDATA #REQUIRED>
+<!ELEMENT investigadores (investigador+)>
+<!ELEMENT investigador (nombreInves, especialidad, proyectos+, publicaciones+)>
+<!ATTLIST investigador id CDATA #REQUIRED>
+<!ELEMENT nombreInves (#PCDATA)>
+<!ELEMENT especialidad (#PCDATA)>
+<!ELEMENT proyectos (proyecto+)>
+<!ELEMENT proyecto (titulo, descripcion, responsable, fechas, secuenciasGenomicas)>
+<!ATTLIST proyecto id CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT responsable (#PCDATA)>
+<!ELEMENT fechas (inicio, fin)>
+<!ELEMENT inicio EMPTY>
+<!ATTLIST inicio anio CDATA #REQUIRED>
+<!ATTLIST inicio mes CDATA #REQUIRED>
+<!ATTLIST inicio dia CDATA #REQUIRED>
+<!ELEMENT fin EMPTY>
+<!ATTLIST fin anio CDATA #REQUIRED>
+<!ATTLIST fin mes CDATA #REQUIRED>
+<!ATTLIST fin dia CDATA #REQUIRED>
+<!ELEMENT secuenciasGenomicas (secuencia+)>
+<!ELEMENT secuencia (nombre, contenido)>
+<!ATTLIST secuencia id CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT publicaciones (publicacion+)>
+<!ELEMENT publicacion (titulopubli, revista, fechaPublicacion)>
+<!ELEMENT titulopubli (#PCDATA)>
+<!ELEMENT revista (#PCDATA)>
+<!ELEMENT fechaPublicacion EMPTY>
+<!ATTLIST fechaPublicacion anio CDATA #REQUIRED>
+<!ATTLIST fechaPublicacion mes CDATA #REQUIRED>
+<!ATTLIST fechaPublicacion dia CDATA #REQUIRED>

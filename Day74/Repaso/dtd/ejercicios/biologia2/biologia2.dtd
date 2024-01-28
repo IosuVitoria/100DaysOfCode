@@ -1,0 +1,14 @@
+<!ELEMENT biologia (tema+)>
+<!ELEMENT tema (nombre, descripcion, conceptos+)>
+<!ATTLIST tema id CDATA #REQUIRED>
+<!ATTLIST tema nivel (Avanzado | Intermedio) #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT conceptos (concepto+)>
+<!ELEMENT concepto (termino, definicion, ejemplos+)>
+<!ATTLIST concepto tipo CDATA #REQUIRED>
+<!ELEMENT termino (#PCDATA)>
+<!ELEMENT definicion (#PCDATA)>
+<!ELEMENT ejemplos (ejemplo*)>
+<!ELEMENT ejemplo (#PCDATA)>
+<!ATTLIST ejemplo origen (experimento | observacion | investigacion | estudio) #REQUIRED>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="facturas.xsd">
+    <factura>
+        <numero>123</numero>
+        <fecha>2022-02-01</fecha>
+        <cliente>
+            <nombre>Cliente1</nombre>
+            <direccion>Calle Principal, 123</direccion>
+        </cliente>
+        <productos>
+            <producto>
+                <nombre>Producto1</nombre>
+                <cantidad>2</cantidad>
+                <precio>25.50</precio>
+            </producto>
+            <producto>
+                <nombre>Producto2</nombre>
+                <cantidad>1</cantidad>
+                <precio>30.00</precio>
+            </producto>
+        </productos>
+    </factura>
+    <!-- Puedes agregar más facturas según sea necesario -->
+</facturas>

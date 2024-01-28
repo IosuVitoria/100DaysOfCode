@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="facturas" type="Tfacturas" />
+
+    <xs:complexType name="Tfacturas">
+        <xs:sequence>
+            <xs:element name="factura" type="tFactura" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tFactura">
+        <xs:sequence>
+            <xs:element name="numero" type="xs:integer"/>
+            <xs:element name="fecha" type="xs:date"/>
+            <xs:element name="cliente" type="tCliente"/>
+            <xs:element name="productos" type="tProductos" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tCliente">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="direccion" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tProductos">
+        <xs:sequence>
+            <xs:element name="producto" type="tProducto" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tProducto">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="cantidad" type="xs:integer"/>
+            <xs:element name="precio" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

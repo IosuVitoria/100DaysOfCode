@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ejemplo XML utilizado en los vídeos -->
+<!DOCTYPE recetas SYSTEM "recetasFinal.dtd">
+<recetas>
+	<receta>
+		<nombre>Tarta de chocolate</nombre>
+		
+		<ingredientes >
+			<ingrediente cantidad="250 gramos">Cola-Cao</ingrediente>
+			<ingrediente cantidad="200 gramos">mantequilla</ingrediente>
+			<ingrediente cantidad="1 vaso">harina</ingrediente>
+			<ingrediente cantidad="1 vaso">azúcar</ingrediente>
+			<ingrediente cantidad="3">huevos</ingrediente>
+		</ingredientes>
+		
+		<pasos>
+			<paso orden="1">Mezclar el cola-cao con la mantequilla.</paso>
+			<paso orden="2">Separar las yemas y mezclarlas con el azúcar.</paso>
+			<paso orden="3">Unir ambas mezclas y añadir la harina.</paso>
+			<paso orden="4">Montar las claras y añadirlas a la mezcla anterior mezclando siempre de arriba hacia abajo para que no se bajen las claras.</paso>
+			<paso orden="5">Untar un molde de mantequilla y espolvorear de harina.</paso>
+			<paso orden="6">Precalentar el horno y hornear a 175º durante unos 40 min.</paso>
+		</pasos>
+	</receta>
+
+	<receta tipo="postre">
+		<nombre>Tarta de chocolate</nombre>
+		<calorias>600</calorias>
+		
+		<ingredientes>
+			<ingrediente cantidad="250 gramos">Cola-Cao</ingrediente>
+			<ingrediente cantidad="200 gramos">mantequilla</ingrediente>
+			<ingrediente cantidad="1 vaso">harina</ingrediente>
+			<ingrediente cantidad="1 vaso">azúcar</ingrediente>
+			<ingrediente cantidad="3">huevos</ingrediente>
+		</ingredientes>
+		
+		<pasos>
+		</pasos>
+	</receta>
+	
+</recetas>

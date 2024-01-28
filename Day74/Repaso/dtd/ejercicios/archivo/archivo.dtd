@@ -1,0 +1,13 @@
+<!ELEMENT catalogo (producto+)>
+<!ELEMENT producto (nombre, marca, descripcion, precio, comentarios)>
+<!ATTLIST producto id CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #REQUIRED>
+<!ELEMENT comentarios (comentario+)>
+<!ELEMENT comentario (usuario, texto)>
+<!ELEMENT usuario (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>

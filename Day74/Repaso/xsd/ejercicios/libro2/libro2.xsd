@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="biblioteca" type="Tbiblioteca" />
+
+    <xs:complexType name="Tbiblioteca">
+        <xs:sequence>
+            <xs:element name="autor" type ="Tautor" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Tautor">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="anioNacimiento" type="xs:integer"/>
+            <xs:element name="libro" type="Tlibro" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Tlibro">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="fechaPublicacion" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- No repetir nombre de etiquetas que cumplan distintas funciones.
+Nombres autodescriptivos. El contenido define el nombre de la etiqueta.
+La etiqueta de nivel superior JAMÁS  se cerrará hasta que las etiquetas de niveles inferiores no estén cerradas.
+Cualquier cadena alfanumérica que no contenga espacios y no comience ni por el cartectos dos puntos ni
+Las etiquetas no pueden contener el la palabra xml, tener espacios, etc...  -->
+
+<!DOCTYPE modulos>
+
+<modulos>
+    <modulo id="LMSGI" >  
+        <!-- El dato id se ha colocado como atributo al ser un dato pequeño, que no se modifica y no se muestra al usuario. -->
+        <nombre>Lenguaje de marcas y sistemas de gestión de la informaición</nombre>
+        <profesores>
+            <profesor>
+                <nombreprofesor>Nora San Saturnino</nombreprofesor>
+                <idprofesor>0001</idprofesor>
+            </profesor>
+            <profesor>
+                <nombreprofesor>Itziar Gortazar</nombreprofesor>
+                <idprofesor>0002</idprofesor>
+            </profesor>
+        </profesores>
+    </modulo>
+
+    <modulo id="BBDD">
+        <nombre>Bases de Datos</nombre>
+        <profesores>
+            <profesor horas="180">
+                <!-- Con el fin de mantener la misma estructura en todas las etiquetas profesor se pasa las horas como atributo de profesor. -->
+                <nombreprofesor>Beñat Madina</nombreprofesor>
+                <idprofesor>0003</idprofesor>
+            </profesor>
+        </profesores>
+    </modulo>
+
+</modulos>

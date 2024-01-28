@@ -1,0 +1,28 @@
+<!ELEMENT recetas (receta+)>
+El archivo se declara y se dice lo que lleva dentro que puede ser una receta como mínimo.
+
+<!ELEMENT receta (tipo, nombre, calorias, ingredientes, pasos)>
+Se declaran todos los elementos que se encuentran bajo la etiqueta de receta. NO SE DECLARAN LOS DE NIVELES INFERIORES.
+
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+Estos tres primeros elementos son texto plano que no requiere  más. No hay declaraciones que hacer de elementos asociados.
+
+<!ELEMENT ingredientes (ingrediente+)>
+El elemento ingrediente es una lista que contiene ingredientes. Se pone el más porque es lógico pensar que va a haber uno o más ingredientes.
+<!ELEMENT ingrediente (#PCDATA)>
+Elemento ingrediente se declara como texto.
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED>
+Asociado a ingrediente se asocia como cantidad y se requiere el texto. LÓGICO. De qué me sirve un ingrediente si no conozco cantidades.
+
+<!ELEMENT pasos (paso+)>
+Parecido a ingredientes. Se declara el elemento padre que son los pasos. Se requieren 1 o más pasos. De ser uno sólo siempre se declararía como elemento único.
+<!ELEMENT paso (#PCDATA)>
+Cada paso es detallado en el texto
+<!ATTLIST paso orden CDATA #REQUIRED>
+El order también declarado para poder visualizar después los pasos. Es un atributo de cada paso y por eso pone paso --> orden.
+
+
+
+

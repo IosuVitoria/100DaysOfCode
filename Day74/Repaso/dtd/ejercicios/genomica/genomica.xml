@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE laboratorio SYSTEM "genomica.dtd">
+<laboratorio>
+    <nombrelabo>GenoLab Innovations</nombrelabo>
+    <fundacion anio="2005" mes="09" dia="25"/>
+    <investigadores>
+        <investigador id="I001">
+            <nombreInves>Dr. Ana García</nombreInves>
+            <especialidad>Genómica Comparativa</especialidad>
+            <proyectos>
+                <proyecto id="P001">
+                    <titulo>Estudio de Variabilidad Genómica en Poblaciones Humanas</titulo>
+                    <descripcion><![CDATA[
+                        Investigación para entender la variabilidad genómica en diferentes poblaciones humanas.
+                    ]]></descripcion>
+                    <responsable>Dr. Javier Martínez</responsable>
+                    <fechas>
+                        <inicio anio="2018" mes="04" dia="01"/>
+                        <fin anio="2023" mes="12" dia="31"/>
+                    </fechas>
+                    <secuenciasGenomicas>
+                        <secuencia id="S001">
+                            <nombre>Secuencia A</nombre>
+                            <contenido><![CDATA[
+                                ATCGTACGTACGTACGTA
+                                GATCGATCGATCGATCG
+                                TGCATGCATGCATGCA
+                            ]]></contenido>
+                        </secuencia>
+                    </secuenciasGenomicas>
+                </proyecto>
+            </proyectos>
+            <publicaciones>
+                <publicacion>
+                    <titulopubli>Avances en Genómica Comparativa</titulopubli>
+                    <revista>Journal of Genomics</revista>
+                    <fechaPublicacion anio="2021" mes="08" dia="15"/>
+                </publicacion>
+            </publicaciones>
+        </investigador>
+    </investigadores>
+</laboratorio>

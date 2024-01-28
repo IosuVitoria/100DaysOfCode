@@ -1,0 +1,18 @@
+El fichero JSON siginifica Javascript object notation.
+
+Sus características más interesantes son:
+
+Es un tipo de fichero de texto plano.
+Es más ligero.
+Es la tendencia en transferencia de información entre páginas web.
+Estructura similar a lenguajes de programación
+
+
+Sintaxis:
+
+-Llaves de apetura y cierre.
+-Tiene claves --> valor como estructura.
+
+Extensión para json. XML to Json
+
+Validador : jsonlint.com

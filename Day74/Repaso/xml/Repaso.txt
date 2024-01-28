@@ -1,0 +1,44 @@
+Características de xml
+
+Xml no es un lenguaje porque no define un conjunto d etiquetas.
+Xml es un metalenguaje porque permite crear lenguajes.
+Xml proporciona una serie de reglas.
+Proporciona a webs y aplicaciones una forma realmente potente de guardar e intercambiar información.
+
+Extensión permitida: XML - Creada por Redhat.
+
+¿Cómo construir lenguaje?
+
+Xml es un lenguaje bien formado.
+
+Posee apertura y cerra de etiquetas.
+Mismo nombre en apertura y cierre de etiqueta.
+Nombres de etiquetas autodescriptivos.
+No repetir los nombres para misma función.
+Atributos entre comillas.
+Comentarios con "<!--" y "-->".
+Anidación: No puede cerrarse un elemento que contenga algún otro elemento que aún no se haya cerrado.
+
+
+XML - Elementos
+
+Repaso de estrucutura en fichero repaso Xml.
+
+
+XML - Atributos
+
+Apuntes de repaso en el fichero repaso02.xml también.
+
+El dato será un elemento si cumple alguna de las sigientes condiciones:
+
+-Contiene subestructuras.
+-Es de un tamaño considerable.
+-Su valor cambia frecuentemente.
+-Su valor va a ser mostrado a un usuario o aplicación.
+
+Los casos en los que el dato será un atributo son:
+
+-El dato es de pequeño tamaño y su valor raramente cambia, aunque hay situaciones en las este caso puede ser un elemento.
+-El dato solo puede tener unos cuantos valores fijos.
+-El dato guía el procesamiento XML pero no se va a mostrar.
+

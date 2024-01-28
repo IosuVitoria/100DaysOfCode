@@ -1,0 +1,13 @@
+<!ELEMENT pedidos (cliente+, productos, descuentos, total)>
+<!ELEMENT cliente (nombreCliente, direccion)>
+<!ELEMENT nombreCliente (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre, precio, cantidad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT descuentos (descuento+)>
+<!ELEMENT descuento (#PCDATA)>
+<!ATTLIST descuento tipo (cupon | envio)  #REQUIRED>
+<!ELEMENT total (#PCDATA)>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="libro.xsd">
+    <titulo>El Señor de los Anillos</titulo>
+    <autor>J.R.R. Tolkien</autor>
+    <genero>Fantasía</genero>
+    <publicacion anio="1954" mes="07" dia="29" />
+</libro>
