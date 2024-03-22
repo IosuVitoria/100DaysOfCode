@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacks and Queues</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #b4c1f9, #ffffff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #f0f3f8;
+            height: 800px;
+            overflow-y: scroll;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1),
+                        -20px -20px 50px rgba(255, 255, 255, 0.5);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 0;
+        }
+
+        .stack, .queue {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #dfe6ef;
+            box-shadow: inset 10px 10px 30px rgba(0, 0, 0, 0.1),
+                        inset -10px -10px 30px rgba(255, 255, 255, 0.5);
+        }
+
+        img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            margin: auto;
+            margin-top: 20px;
+            width: 150px;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .explanation_img{
+            margin: auto;
+            height: 200px;
+            width: auto;
+        }
+        button {
+            margin: auto;
+            margin-bottom: 5px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            cursor: pointer;
+            background: linear-gradient(to right, #91c6f4, #4caf50);
+            color: white;
+            transition: background-color 0.3s;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                        -5px -5px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #76a5d5, #388e3c);
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .list {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .item {
+            padding: 8px;
+            border-radius: 5px;
+            background-color: #e8eff6;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                        -5px -5px 15px rgba(255, 255, 255, 0.5);
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadeIn {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stacks and Queues</h1>
+            <div style="width: 600px">
+                <p>
+                    <strong>Stack (LIFO):</strong> En una pila (stack), el último elemento agregado es el primero en ser eliminado. Es como apilar platos: solo puedes retirar el plato superior sin desmontar toda la pila.
+                </p>
+                <p>
+                    <strong>Queue (FIFO):</strong> En una cola (queue), el primer elemento agregado es el primero en ser eliminado. Es similar a una fila en un supermercado: la primera persona en la fila es la primera en ser atendida.
+                </p>
+            </div>
+        <div class="stack">
+            <h2>Stack (LIFO)</h2>
+            <img src="./lifo.jpg" class="explanation_img" alt="Stack imagen">
+            <input type="text" id="stackInput" placeholder="Escribe y prueba">
+            <button onclick="pushToStack()">Push</button>
+            <button onclick="popFromStack()">Pop</button>
+            <div id="stackList" class="list"></div>
+        </div>
+        <div class="queue">
+            <h2>Queue (FIFO)</h2>
+            <img src="./fifo.png" class="explanation_img" alt="Queue imagen">
+            <input type="text" id="queueInput" placeholder="Escribe y prueba">
+            <button onclick="enqueue()">Enqueue</button>
+            <button onclick="dequeue()">Dequeue</button>
+            <div id="queueList" class="list"></div>
+        </div>
+    </div>
+
+    <script>
+        let stack = [];
+        let queue = [];
+
+        function updateStackList() {
+            let stackList = document.getElementById('stackList');
+            stackList.innerHTML = '';
+            stack.forEach(item => {
+                let newItem = document.createElement('div');
+                newItem.textContent = item;
+                newItem.classList.add('item', 'fadeIn');
+                stackList.appendChild(newItem);
+            });
+        }
+
+        function updateQueueList() {
+            let queueList = document.getElementById('queueList');
+            queueList.innerHTML = '';
+            queue.forEach(item => {
+                let newItem = document.createElement('div');
+                newItem.textContent = item;
+                newItem.classList.add('item', 'fadeIn');
+                queueList.appendChild(newItem);
+            });
+        }
+
+        function pushToStack() {
+            let inputValue = document.getElementById('stackInput').value;
+            if (inputValue !== '') {
+                stack.push(inputValue);
+                updateStackList();
+                console.log('Element added to stack:', inputValue);
+                console.log('Current stack:', stack);
+            }
+        }
+
+        function popFromStack() {
+            if (stack.length > 0) {
+                let removedElement = stack.pop();
+                updateStackList();
+                console.log('Element removed from stack:', removedElement);
+                console.log('Current stack:', stack);
+            } else {
+                console.log('Stack is empty.');
+            }
+        }
+
+        function enqueue() {
+            let inputValue = document.getElementById('queueInput').value;
+            if (inputValue !== '') {
+                queue.push(inputValue);
+                updateQueueList();
+                console.log('Element added to queue:', inputValue);
+                console.log('Current queue:', queue);
+            }
+        }
+
+        function dequeue() {
+            if (queue.length > 0) {
+                let removedElement = queue.shift();
+                updateQueueList();
+                console.log('Element removed from queue:', removedElement);
+                console.log('Current queue:', queue);
+            } else {
+                console.log('Queue is empty.');
+            }
+        }
+    </script>
+</body>
+</html>
