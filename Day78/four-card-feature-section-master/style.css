@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* ### Primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* ### Neutral */
+
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.general__display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 125px;
+    height: 100%;
+}
+
+.general__display__header{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.general__display__header__titles h2{
+    color: var(--grayishBlue);
+    font-weight: 200;
+}
+
+.bold{
+    font-weight: 600 !important;
+    color: var(--veryDarkBlue) !important ;
+}
+
+.general__display__header__text{
+    color: var(--grayishBlue);
+    font-weight: 600
+}
+
+/* Organización de las tarjetas en pantalla - 1:2:1 */
+
+.general__display__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 80%;
+}
+
+/* Estilo para organizar la zona media de pantalla */
+
+.general__display__content__two{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Estilos para las tarjetas. */
+
+.general__display__content__teamBuilder,
+.general__display__content__karma,
+.general__display__content__calculator,
+.general__display__content__supervisor{
+    display: flex;
+    width: 250px;
+    height: 175px !important;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(16, 8, 66, 0.3);
+}
+
+.general__display__content__teamBuilder h6,
+.general__display__content__karma h6,
+.general__display__content__calculator h6,
+.general__display__content__supervisor h6{
+    font-size: 13px !important;
+    background-color: white;
+    font-weight: 500;
+}
+
+.general__display__content__teamBuilder p,
+.general__display__content__karma p,
+.general__display__content__calculator p,
+.general__display__content__supervisor p{
+    font-size: 10px !important;
+    background-color: white;
+}
+
+.general__display__content__teamBuilder img,
+.general__display__content__karma img,
+.general__display__content__calculator img,
+.general__display__content__supervisor img{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    background-color: white;
+    right: -72%;
+    bottom: 13%;
+}
+
+.general__display__content__teamBuilder{
+    border-top: 3px solid var(--red);
+}
+
+.general__display__content__karma{
+    border-top: 3px solid var(--orange);
+}
+
+.general__display__content__calculator{
+    border-top: 3px solid var(--blue);
+}
+
+.general__display__content__supervisor{
+    border-top: 3px solid var(--cyan);
+}
+
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    background-color: white !important;
+    gap: 7px;
+    margin-top: 18px;
+}
+
+.card__content p{
+    color: var(--grayishBlue);
+}
+
+.card__content h6{
+    color: var(--veryDarkBlue);
+}
+
+
+.footer__frontendMentor{
+    display: flex !important;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    .general__display__header{
+        width: 300px;
+        text-align: center;
+        gap: 15px;
+        margin-bottom: 45px;
+    }
+
+
+    .general__display__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 80%;
+    }
+
+}
